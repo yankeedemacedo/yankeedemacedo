@@ -1,16 +1,16 @@
 :root {
-  --bg: #f5efe6;
-  --bg-soft: #efe1d2;
-  --panel: rgba(253, 248, 243, 0.8);
-  --panel-strong: #f3e7dc;
-  --line: rgba(94, 72, 53, 0.14);
-  --text: #2d241e;
-  --muted: #5f5248;
-  --primary: #b86845;
-  --secondary: #d79a68;
-  --accent: #7d8f5f;
-  --success: #6f8b56;
-  --shadow: 0 20px 50px rgba(111, 82, 62, 0.15);
+  --bg: #120d0b;
+  --bg-soft: #1b1412;
+  --panel: rgba(31, 24, 21, 0.82);
+  --panel-strong: #201915;
+  --line: rgba(201, 164, 135, 0.18);
+  --text: #f7efe8;
+  --muted: #d5c2b3;
+  --primary: #b77752;
+  --secondary: #d8a276;
+  --accent: #b2936d;
+  --success: #a0b67f;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
 }
 
 * {
@@ -25,15 +25,15 @@ body {
   background:
     radial-gradient(
       circle at top left,
-      rgba(183, 113, 76, 0.14),
-      transparent 28%
+      rgba(183, 119, 82, 0.2),
+      transparent 30%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(125, 143, 95, 0.15),
-      transparent 32%
+      rgba(178, 147, 109, 0.18),
+      transparent 34%
     ),
-    var(--bg);
+    linear-gradient(180deg, #140f0d 0%, #120d0b 100%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -56,8 +56,8 @@ img {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(18px);
-  background: rgba(255, 250, 246, 0.72);
-  border-bottom: 1px solid rgba(94, 72, 53, 0.12);
+  background: rgba(18, 13, 11, 0.8);
+  border-bottom: 1px solid var(--line);
   color: var(--text);
 }
 
@@ -96,7 +96,7 @@ img {
 }
 
 .nav-links a {
-  color: #4a3b31;
+  color: #e7d5c3;
   font-size: 0.95rem;
   font-weight: 600;
   transition: 0.2s ease;
@@ -104,7 +104,7 @@ img {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--text);
+  color: #fff7f1;
 }
 
 .btn {
@@ -132,7 +132,7 @@ img {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--line);
   color: var(--text);
 }
@@ -156,7 +156,7 @@ img {
 
 .mobile-menu a {
   display: block;
-  color: #3a2d27;
+  color: #f3e7dc;
   padding: 0.8rem 0;
   font-weight: 600;
 }
@@ -178,7 +178,7 @@ img {
   gap: 0.65rem;
   padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.82rem;
@@ -237,8 +237,8 @@ h4 {
 .profile-card {
   background: linear-gradient(
     180deg,
-    rgba(245, 238, 230, 0.96),
-    rgba(242, 230, 217, 0.8)
+    rgba(30, 22, 18, 0.96),
+    rgba(24, 18, 15, 0.9)
   );
   border: 1px solid var(--line);
   border-radius: 1.5rem;
@@ -253,10 +253,10 @@ h4 {
   overflow: hidden;
   background: linear-gradient(
     135deg,
-    rgba(184, 104, 69, 0.14),
-    rgba(125, 143, 95, 0.15)
+    rgba(183, 119, 82, 0.2),
+    rgba(178, 147, 109, 0.12)
   );
-  border: 1px solid rgba(94, 72, 53, 0.12);
+  border: 1px solid rgba(201, 164, 135, 0.16);
 }
 
 .profile-art {
@@ -316,7 +316,7 @@ h4 {
   padding: 0.8rem;
   border-radius: 1rem;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.03);
   text-align: center;
 }
 
@@ -364,7 +364,7 @@ h4 {
 }
 
 .panel {
-  background: rgba(255, 251, 246, 0.72);
+  background: rgba(31, 24, 21, 0.82);
   border: 1px solid var(--line);
   border-radius: 1.25rem;
   padding: 1.4rem;
@@ -387,7 +387,7 @@ h4 {
 .project-card {
   position: relative;
   overflow: hidden;
-  background: rgba(255, 251, 246, 0.76);
+  background: rgba(31, 24, 21, 0.82);
   border: 1px solid var(--line);
   border-radius: 1.3rem;
   padding: 1.5rem;
@@ -424,8 +424,8 @@ h4 {
   align-items: center;
   padding: 0.42rem 0.7rem;
   border-radius: 999px;
-  background: rgba(184, 104, 69, 0.08);
-  border: 1px solid rgba(184, 104, 69, 0.14);
+  background: rgba(183, 119, 82, 0.12);
+  border: 1px solid rgba(183, 119, 82, 0.18);
   color: var(--muted);
   font-size: 0.74rem;
   font-weight: 600;
@@ -481,7 +481,7 @@ h4 {
   position: relative;
   padding: 1.2rem 1rem 1.2rem 1.3rem;
   border-radius: 1rem;
-  background: rgba(255, 251, 246, 0.7);
+  background: rgba(31, 24, 21, 0.82);
   border: 1px solid var(--line);
 }
 
@@ -511,7 +511,7 @@ h4 {
 
 .contact-card {
   padding: 1.4rem;
-  background: rgba(255, 251, 246, 0.75);
+  background: rgba(31, 24, 21, 0.82);
   border: 1px solid var(--line);
   border-radius: 1.25rem;
 }
@@ -536,7 +536,7 @@ h4 {
   margin-top: 2rem;
   display: grid;
   gap: 1rem;
-  background: rgba(255, 251, 246, 0.75);
+  background: rgba(31, 24, 21, 0.82);
   border: 1px solid var(--line);
   border-radius: 1.35rem;
   padding: 1.5rem;
