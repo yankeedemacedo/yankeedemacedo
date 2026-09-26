@@ -1,23 +1,101 @@
-# Oi, eu sou Yankee de Macedo!
+# Yankee de Macedo
 
-Sou **Desenvolvedor Fullstack** e graduando no Bacharelado em Ciência e Tecnologia (BCT) pela UFRN. Atualmente, atuo como Programador no Centro de Tecnologia da UFRN. Transito entre a pesquisa acadêmica de excelência e a construção de softwares do mundo real, com forte foco na arquitetura de sistemas escaláveis, criação de APIs e desenvolvimento de interfaces interativas.
+<div align="center">
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Portfolio-0D1117?style=for-the-badge&logo=github&logoColor=white)](https://yankeedemacedo.github.io/yankeedemacedo/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yankeemauricio/)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yankeemauricio2@gmail.com)
+
+</div>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=Backend+%7C+Arquitetura+de+Software+%7C+Integra%C3%A7%C3%A3o+de+Sistemas;Engenharia+da+Computa%C3%A7%C3%A3o+%7C+UFRN;Construindo+solu%C3%A7%C3%B5es+com+impacto+real" alt="Typing SVG" />
+</p>
+
+Desenvolvedor Fullstack, estudante de Ciência e Tecnologia e Engenharia da Computação na UFRN, com foco em backend, arquitetura de software e integração de sistemas.
+
+<p>
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img alt="Django" src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+</div>
 
 ---
 
-## 💻 Projetos em Destaque
+## Sobre mim
 
-### 🌬️ Boreas *(Sistema Interno - UFRN)*
-Plataforma oficial responsável por organizar, administrar e orquestrar todo o complexo fluxo de manutenções de ar condicionado da UFRN. 
-* **O Impacto:** Batizado em homenagem ao deus grego do vento do norte, o sistema lida com um fluxo de trabalho denso e crítico para a infraestrutura da universidade, otimizando a logística de manutenções preventivas e corretivas.
-* **Nota:** *Por ser uma plataforma de uso interno e institucional da UFRN, este projeto possui repositório privado e não está alocado publicamente no GitHub.*
+Sou estudante de Ciência e Tecnologia na UFRN, com interesse em arquitetura de software, integração de sistemas e desenvolvimento backend. Tenho experiência prática na criação de APIs RESTful, modelagem de dados e implementação de regras de negócio utilizando Python e ecossistema JavaScript.
 
-### 📅 Agendia
-O projeto que foi o grande divisor de águas na minha carreira e despertou minha paixão pelo desenvolvimento Backend. Nascido como um projeto para a disciplina de Backend na UFRN, o Agendia foi desenvolvido do zero.
-* **Stack:** Construído integralmente em **Node.js**, com a interface frontend implementada e renderizada diretamente pelo próprio backend.
-* **O Impacto:** Marcou minha entrada oficial no mundo da programação focada em regras de negócio e estruturação de servidores.
+Atualmente, atuo como bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo soluções e sistemas com foco em backend e integração. Meu objetivo é construir uma base sólida em engenharia de software para, no futuro, aprofundar meu trabalho em engenharia de IA e sistemas inteligentes.
+
+<div align="center">
+
+| Foco atual              | Objetivo              | Base técnica   |
+| ----------------------- | --------------------- | -------------- |
+| Backend                 | Engenharia de IA      | APIs REST      |
+| Arquitetura de software | Sistemas inteligentes | Python         |
+| Integração de sistemas  | Automação             | Node.js        |
+| Persistência de dados   | Escalabilidade        | Banco de dados |
+
+</div>
+
 ---
 
-## 🛠️ Stack Tecnológico e Ferramentas
+## Experiência profissional
+
+### Centro de Tecnologia da UFRN | Bolsista Programador de TI
+
+Atuação como desenvolvedor Fullstack no sistema Boreas, com ênfase no backend.
+
+- Modelagem e estruturação de dados
+- Implementação de regras de negócio
+- Desenvolvimento de APIs e integração com o frontend
+- Manutenção e evolução de sistemas institucionais
+
+### Desenho e Modelagem de Negócio | Bolsista de Pesquisa
+
+Análise de dados e desenvolvimento de relatórios e gráficos técnicos, com foco em escrita técnica e apresentação de indicadores.
+
+### Teleperformance | Expert em Atendimento
+
+Atendimento especializado via chat, análise de perfis de usuários e resolução de conflitos.
+
+---
+
+## Formação
+
+- Bacharelado em Ciência e Tecnologia com ênfase em Computação - UFRN
+- Previsão de conclusão: 2027.2
+- Auxiliar em Gestão Empresarial - CCM
+
+---
+
+## Projetos em destaque
+
+### Boreas
+
+Sistema institucional da UFRN para gestão e organização de manutenções de ar-condicionado.
+
+- Stack principal: Django, Python, Next.js
+- Foco: backend, regras de negócio e dados
+- Observação: projeto interno da instituição
+
+### Agendia
+
+Sistema SaaS para gestão, publicação e inscrição em eventos.
+
+- Stack principal: Node.js
+- Foco: regras de negócio, estrutura de APIs e organização de dados
+
+### Outras APIs de estudo
+
+APIs RESTful desenvolvidas em Node.js para prática intensiva de arquitetura backend e integração de sistemas.
+
+---
+
+## Stack tecnológica
 
 **Desenvolvimento Backend:**
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -32,17 +110,37 @@ O projeto que foi o grande divisor de águas na minha carreira e despertou minha
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 **Ecossistema & Workflow:**
-* **Controle de Versão & IA:** Git e GitHub.
-* **Infraestrutura:** Experiência prática com processamento de alto desempenho através do cluster do NPAD (Núcleo de Processamento de Alto Desempenho).
+
+- Git e GitHub
+- ORM e bancos de dados
+- Estruturação de rotas e serviços
+- APIs RESTful
+- Persistência de dados
 
 ---
 
-## 🎓 Trajetória Acadêmica e Conquistas
-- 🏆 **Artigo Premiado:** Coautor de trabalho acadêmico de destaque, aliando teoria científica à prática tecnológica.
-- 📚 **Aprendizado Contínuo:** Aprimoramento técnico contínuo através de bootcamps aliado a estudos ativos em Machine Learning e Computação Quântica. Busco expandir meu repertório técnico não apenas para acompanhar as tendências, mas para ser um desenvolvedor preparado para o futuro do mercado.
+## Interesses e estudos
+
+### Foco atual
+
+- Backend
+- Arquitetura de software
+- Integração de sistemas
+- Persistência de dados
+- APIs e regras de negócio
+
+### Objetivo futuro
+
+Quando consolidar uma base sólida em engenharia de software, desejo aprofundar-me em engenharia de IA e integração de sistemas inteligentes, conectando desenvolvimento backend, dados e automação em soluções reais.
 
 ---
 
-## 📫 Vamos nos conectar!
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yankeemauricio/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yankeemauricio2@gmail.com)
+## Contato
+
+- LinkedIn: linkedin.com/in/yankeemauricio/
+- GitHub: github.com/yankeedemacedo
+- E-mail: yankeemauricio2@gmail.com
+
+---
+
+Se quiser, também posso adaptar o README para um estilo mais institucional, mais técnico ou mais criativo, conforme o tom do seu portfólio.
