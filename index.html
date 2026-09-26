@@ -3,275 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yankee de Macedo | Desenvolvedor Fullstack</title>
+    <title>Yankee de Macedo — Backend &amp; Arquitetura de Software</title>
     <meta
       name="description"
-      content="Portfólio de Yankee de Macedo, desenvolvedor fullstack com foco em arquitetura de software, produtos digitais e soluções úteis."
+      content="Arquivo de trabalhos de Yankee de Macedo: backend, arquitetura de software e integração de sistemas. Natal-RN, UFRN."
     />
+    <meta name="theme-color" content="#0A0A0A" />
+    <meta property="og:title" content="Yankee de Macedo — Backend & Arquitetura" />
+    <meta property="og:description" content="Software que sustenta operação: dados, APIs e integração." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="page-shell">
       <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="index.html" class="brand" aria-label="Ir para o início">
-            <span class="brand-mark">Y</span>
+        <div class="wrap nav-wrap">
+          <a href="index.html" class="brand" aria-label="Yankee de Macedo — início">
+            <span class="brand-mark" aria-hidden="true">YM</span>
             <span class="brand-name">Yankee de Macedo</span>
+            <span class="brand-role">Arquivo 2026</span>
           </a>
-
           <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html" class="is-active">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="projects.html">Projetos</a>
+            <a href="projects.html">Arquivo</a>
             <a href="contact.html">Contato</a>
           </nav>
-
-          <a class="button button-primary" href="contact.html" data-magnetic
-            >Fale comigo</a
-          >
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-          >
-            Menu
-          </button>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
         </div>
-
-        <div class="mobile-nav" aria-label="Menu mobile">
-          <a href="index.html">Início</a>
-          <a href="about.html">Sobre</a>
-          <a href="projects.html">Projetos</a>
-          <a href="contact.html">Contato</a>
+        <div class="wrap">
+          <nav class="mobile-nav" id="menu-mobile" aria-label="Menu mobile">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="projects.html">Arquivo</a>
+            <a href="contact.html">Contato</a>
+          </nav>
         </div>
       </header>
 
-      <main>
-        <section id="top" class="hero section">
-          <div class="container hero-grid">
-            <div class="hero-copy" data-reveal>
-              <p class="eyebrow">
-                Desenvolvedor Fullstack · Arquitetura de Software
-              </p>
-              <h1>
-                Yankee de Macedo
-                <span>estrutura ideias em produtos que funcionam.</span>
-              </h1>
-              <p class="lead">
-                Trabalho na interseção entre código, produto e clareza
-                operacional. Crio sistemas com foco em desempenho,
-                confiabilidade e impacto real para pessoas e negócios.
-              </p>
-
-              <div class="hero-actions">
-                <a
-                  class="button button-primary"
-                  href="projects.html"
-                  data-magnetic
-                  >Ver projetos</a
-                >
-                <a
-                  class="button button-secondary"
-                  href="about.html"
-                  data-magnetic
-                  >Sobre mim</a
-                >
-              </div>
-
-              <ul class="hero-list" aria-label="Principais áreas de atuação">
-                <li>Backend & APIs</li>
-                <li>Arquitetura</li>
-                <li>Product thinking</li>
-              </ul>
+      <main id="conteudo">
+        <section class="hero">
+          <div class="wrap">
+            <div class="hero-meta">
+              <span>Arquivo de trabalhos — Vol. 01</span>
+              <span>Natal, RN — 5.79°S 35.20°W</span>
             </div>
-
-            <aside class="hero-panel" data-reveal>
-              <div class="panel-frame">
-                <div class="panel-header">
-                  <span>Perfil</span>
-                  <span>2026</span>
-                </div>
-
-                <div class="profile-block">
-                  <div class="avatar" aria-hidden="true">Y</div>
-                  <div>
-                    <p class="mini-label">Atuação</p>
-                    <h2>Engenharia de software com visão de produto.</h2>
-                  </div>
-                </div>
-
-                <div class="metrics">
-                  <div>
-                    <strong>+3</strong>
-                    <span>Anos</span>
-                  </div>
-                  <div>
-                    <strong>10+</strong>
-                    <span>Projetos</span>
-                  </div>
-                  <div>
-                    <strong>UFRN</strong>
-                    <span>Base</span>
-                  </div>
-                </div>
-              </div>
-            </aside>
+            <h1 class="hero-title" aria-label="Yankee de Macedo">
+              <span class="row"><span>Yankee</span></span>
+              <span class="row"><span class="outline">de Macedo</span></span>
+            </h1>
+            <div class="hero-sub">
+              <p>Desenvolvedor Fullstack — Backend &amp; Arquitetura de Software</p>
+              <a class="scroll-hint" href="#manifesto">Role para explorar <span class="line" aria-hidden="true"></span></a>
+            </div>
           </div>
         </section>
 
-        <section id="about" class="section section-muted">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Sobre</p>
-            <h2>Construo soluções com rigor técnico e sensibilidade humana.</h2>
-          </div>
-
-          <div class="container about-grid">
-            <div class="about-copy" data-reveal>
+        <section class="section" id="manifesto">
+          <div class="wrap">
+            <p class="section-label">01 / Manifesto</p>
+            <div class="manifesto" data-reveal>
               <p>
-                Sou um desenvolvedor que gosta de resolver problemas com
-                clareza. Minha rotina é baseada em entender o contexto real,
-                modelar a melhor estrutura e transformar ideias em sistemas com
-                boa arquitetura e boa experiência de uso.
-              </p>
-              <p>
-                Acredito que tecnologia não é só código; é organização,
-                raciocínio, comunicação e responsabilidade. Por isso, meu
-                trabalho busca unir técnica, propósito e percepção de quem vai
-                usar aquilo que eu construo.
+                Construo <strong>software que sustenta operação</strong>:
+                dados modelados com rigor, regras de negócio no backend
+                <span class="faint">e APIs que o frontend consome sem fricção.</span>
               </p>
             </div>
+            <dl class="facts" data-reveal>
+              <div><dt>Base</dt><dd>Centro de Tecnologia — UFRN, Natal-RN</dd></div>
+              <div><dt>Sistema em produção</dt><dd>Boreas — manutenção de climatização</dd></div>
+              <div><dt>Materiais</dt><dd>Python · Django · Node.js · Next.js</dd></div>
+            </dl>
+          </div>
+        </section>
 
-            <div class="about-notes" data-reveal>
-              <article>
-                <span>01</span>
+        <section class="section" id="arquivo">
+          <div class="wrap">
+            <p class="section-label">02 / Arquivo selecionado</p>
+            <div class="archive" data-reveal>
+              <a class="work-row" href="projects.html#boreas" data-parallax>
+                <span class="idx">01</span>
                 <div>
-                  <h3>Raciocínio estrutural</h3>
-                  <p>
-                    Organizo sistemas para escalar com consistência e segurança.
-                  </p>
+                  <h3><span class="u">Boreas</span></h3>
+                  <p class="desc">Gestão de manutenção de ar-condicionado da UFRN — backend, dados e regras de negócio.</p>
                 </div>
-              </article>
-              <article>
-                <span>02</span>
+                <span class="tags">Django · Python</span>
+                <span class="yr">UFRN</span>
+              </a>
+              <a class="work-row" href="projects.html#agendia" data-parallax>
+                <span class="idx">02</span>
                 <div>
-                  <h3>Foco em impacto</h3>
-                  <p>
-                    Valorizo soluções que simplificam processos e melhoram o dia
-                    a dia.
-                  </p>
+                  <h3><span class="u">Agendia</span></h3>
+                  <p class="desc">SaaS de eventos — gestão, publicação e inscrição; desenho de API e dados.</p>
                 </div>
-              </article>
-              <article>
-                <span>03</span>
+                <span class="tags">Node.js · REST</span>
+                <span class="yr">SaaS</span>
+              </a>
+              <a class="work-row" href="projects.html#estudos" data-parallax>
+                <span class="idx">03</span>
                 <div>
-                  <h3>Aprendizado contínuo</h3>
-                  <p>
-                    Exploro novas tecnologias para evoluir com visão crítica e
-                    prática.
-                  </p>
+                  <h3><span class="u">Estudos</span></h3>
+                  <p class="desc">APIs REST em Node.js — laboratório de arquitetura, integração e persistência.</p>
                 </div>
-              </article>
+                <span class="tags">P&amp;D</span>
+                <span class="yr">Cont.</span>
+              </a>
             </div>
           </div>
         </section>
 
-        <section id="projects" class="section">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Projetos</p>
-            <h2>Uma seleção de trabalho, pensado em realidade e escala.</h2>
-          </div>
-
-          <div class="container project-grid">
-            <article class="project-card" data-reveal>
-              <div class="project-icon">01</div>
-              <div class="project-meta">
-                <span class="project-tag">UFRN</span>
-                <span class="project-tag">Sistema institucional</span>
+        <footer class="footer">
+          <div class="wrap">
+            <p class="section-label" data-reveal>03 / Contato</p>
+            <div data-reveal>
+              <a class="footer-mail" href="mailto:yankeemauricio2@gmail.com">yankeemauricio2@gmail.com</a>
+              <div class="footer-links">
+                <a class="btn-ghost" href="https://www.linkedin.com/in/yankeemauricio/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                <a class="btn-ghost" href="https://github.com/yankeedemacedo" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <a class="btn-ghost" href="about.html">Sobre →</a>
               </div>
-              <h3>Boreas</h3>
-              <p>
-                Plataforma orientada à gestão operacional e manutenção, com foco
-                em fluxo, organização e apoio às decisões de rotina.
-              </p>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-icon">02</div>
-              <div class="project-meta">
-                <span class="project-tag">Node.js</span>
-                <span class="project-tag">Backend</span>
-              </div>
-              <h3>Agendia</h3>
-              <p>
-                Estrutura robusta para regras de negócio, estrutura de servidor
-                e organização lógica de um sistema de agendamento e operação.
-              </p>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-icon">03</div>
-              <div class="project-meta">
-                <span class="project-tag">Arquitetura</span>
-                <span class="project-tag">P&D</span>
-              </div>
-              <h3>Estudos de software</h3>
-              <p>
-                Iniciativas de pesquisa e desenvolvimento em engenharia,
-                arquitetura de software e criação de soluções bem pensadas.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section id="contact" class="section section-muted">
-          <div class="container contact-wrap">
-            <div class="contact-copy" data-reveal>
-              <p class="section-kicker">Contato</p>
-              <h2>
-                Se houver uma ideia, um projeto ou uma conversa relevante, eu
-                quero ouvir.
-              </h2>
-              <p>
-                Estou disponível para oportunidades, colaborações e projetos que
-                exijam clareza, técnica e atenção aos detalhes.
-              </p>
             </div>
-
-            <div class="contact-links" data-reveal>
-              <a href="mailto:yankeemauricio2@gmail.com"
-                >yankeemauricio2@gmail.com</a
-              >
-              <a
-                href="https://www.linkedin.com/in/yankeemauricio/"
-                target="_blank"
-                rel="noreferrer"
-                >LinkedIn</a
-              >
-              <a
-                href="https://github.com/yankeedemacedo"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
+            <div class="footer-base">
+              <span>© <span data-year>2026</span> Yankee de Macedo</span>
+              <span>HTML · CSS · JS puros — GitHub Pages</span>
             </div>
           </div>
-        </section>
+        </footer>
       </main>
-
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <p>© <span data-year></span> Yankee de Macedo</p>
-        </div>
-      </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

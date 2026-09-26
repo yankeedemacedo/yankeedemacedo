@@ -3,211 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre | Yankee de Macedo</title>
-    <meta
-      name="description"
-      content="Conheça a trajetória profissional, os valores e a visão de Yankee de Macedo como desenvolvedor e criador de sistemas."
-    />
+    <title>Sobre — Yankee de Macedo</title>
+    <meta name="description" content="Percurso de Yankee de Macedo: operação, pesquisa, dados e backend na UFRN." />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="page-shell">
       <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="index.html" class="brand" aria-label="Ir para o início">
-            <span class="brand-mark">Y</span>
+        <div class="wrap nav-wrap">
+          <a href="index.html" class="brand" aria-label="Yankee de Macedo — início">
+            <span class="brand-mark" aria-hidden="true">YM</span>
             <span class="brand-name">Yankee de Macedo</span>
+            <span class="brand-role">Arquivo 2026</span>
           </a>
-
           <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html">Início</a>
             <a href="about.html" class="is-active">Sobre</a>
-            <a href="projects.html">Projetos</a>
+            <a href="projects.html">Arquivo</a>
             <a href="contact.html">Contato</a>
           </nav>
-
-          <a class="button button-primary" href="contact.html" data-magnetic
-            >Fale comigo</a
-          >
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-          >
-            Menu
-          </button>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
         </div>
-
-        <div class="mobile-nav" aria-label="Menu mobile">
-          <a href="index.html">Início</a>
-          <a href="about.html">Sobre</a>
-          <a href="projects.html">Projetos</a>
-          <a href="contact.html">Contato</a>
+        <div class="wrap">
+          <nav class="mobile-nav" id="menu-mobile" aria-label="Menu mobile">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="projects.html">Arquivo</a>
+            <a href="contact.html">Contato</a>
+          </nav>
         </div>
       </header>
 
-      <main>
-        <section class="hero section">
-          <div class="container hero-grid">
-            <div class="hero-copy" data-reveal>
-              <p class="eyebrow">Perfil profissional</p>
-              <h1>
-                Yankee de Macedo
-                <span>constrói sistemas com propósito e clareza.</span>
-              </h1>
-              <p class="lead">
-                Desenvolvedor fullstack com foco em arquitetura, backend e
-                soluções que resolvem problemas reais. Trabalho em projetos que
-                exigem lógica, organização e visão de produto, com atenção aos
-                detalhes que fazem a diferença.
-              </p>
-
-              <div class="hero-actions">
-                <a
-                  class="button button-primary"
-                  href="projects.html"
-                  data-magnetic
-                  >Ver projetos</a
-                >
-                <a
-                  class="button button-secondary"
-                  href="contact.html"
-                  data-magnetic
-                  >Conectar</a
-                >
-              </div>
-            </div>
-
-            <aside class="hero-panel" data-reveal>
-              <div class="panel-frame">
-                <div class="panel-header">
-                  <span>Atuação</span>
-                  <span>2026</span>
-                </div>
-
-                <div class="profile-block">
-                  <div class="avatar" aria-hidden="true">Y</div>
-                  <div>
-                    <p class="mini-label">Especialidade</p>
-                    <h2>Software com visão estratégica.</h2>
-                  </div>
-                </div>
-
-                <div class="metrics">
-                  <div>
-                    <strong>+3</strong>
-                    <span>Anos</span>
-                  </div>
-                  <div>
-                    <strong>10+</strong>
-                    <span>Projetos</span>
-                  </div>
-                  <div>
-                    <strong>UFRN</strong>
-                    <span>Base</span>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section class="section section-muted">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Sobre</p>
-            <h2>O que me move no trabalho e no aprendizado.</h2>
-          </div>
-
-          <div class="container about-grid">
-            <div class="about-copy" data-reveal>
-              <p>
-                Sou um desenvolvedor que gosta de entender o problema antes de
-                escrever a solução. Meu processo combina análise, organização e
-                execução, levando em conta não só o que a tecnologia permite,
-                mas também o valor que ela cria para as pessoas.
-              </p>
-              <p>
-                Acredito que bom software nasce da junção entre técnica e
-                sensibilidade: clareza no código, rigor na arquitetura e
-                responsabilidade sobre o impacto real do produto.
-              </p>
-            </div>
-
-            <div class="about-notes" data-reveal>
-              <article>
-                <span>01</span>
-                <div>
-                  <h3>Estrutura</h3>
-                  <p>
-                    Organizo sistemas para evoluir com consistência, segurança e
-                    confiabilidade.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span>02</span>
-                <div>
-                  <h3>Impacto</h3>
-                  <p>
-                    Busco soluções que simplifiquem operações e melhorem o
-                    cotidiano de quem usa.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span>03</span>
-                <div>
-                  <h3>Curiosidade</h3>
-                  <p>
-                    Aprendo com disciplina, exploro novas áreas e mantenho um
-                    olhar crítico sobre a tecnologia.
-                  </p>
-                </div>
-              </article>
-            </div>
+      <main id="conteudo">
+        <section class="page-hero">
+          <div class="wrap">
+            <p class="section-label">Sobre / Percurso</p>
+            <h1 data-reveal>Técnica a serviço da operação.</h1>
+            <p class="lead" data-reveal>
+              Estudante de Ciência e Tecnologia e Engenharia de Computação na UFRN
+              (conclusão 2027.2). Bolsista Programador de TI no Centro de Tecnologia,
+              com atuação fullstack e ênfase em backend no sistema Boreas.
+            </p>
           </div>
         </section>
 
         <section class="section">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Trajetória</p>
-            <h2>
-              Uma caminhada construída entre academia, produto e execução.
-            </h2>
-          </div>
-
-          <div class="container">
-            <div class="about-copy" data-reveal>
-              <p>
-                Minha formação acadêmica e o trabalho prático passaram a se
-                complementar de forma muito natural: o estudo me dá base, e a
-                experiência me ensina a traduzir teoria em soluções úteis.
-              </p>
-              <p>
-                Ao longo do caminho, trabalhei com desafios ligados a integração
-                de sistemas, processo operacional, regras de negócio e
-                organização de dados, sempre com foco em entregar algo
-                funcional, coerente e com propósito.
-              </p>
+          <div class="wrap">
+            <p class="section-label" data-reveal>Linha do tempo</p>
+            <div class="timeline" data-reveal>
+              <article>
+                <span class="when">Atual — CT · UFRN</span>
+                <div>
+                  <h3>Bolsista Programador de TI</h3>
+                  <p>Sistema Boreas · Django · Python · Next.js</p>
+                  <ul>
+                    <li>Modelagem e estruturação de dados de equipamentos e manutenções.</li>
+                    <li>Regras de negócio, APIs e integração com o frontend.</li>
+                    <li>Manutenção e evolução de sistema institucional em uso.</li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="when">Pesquisa</span>
+                <div>
+                  <h3>Bolsista — Desenho e Modelagem de Negócio</h3>
+                  <ul>
+                    <li>Análise de dados, relatórios e gráficos técnicos.</li>
+                    <li>Escrita técnica e apresentação de indicadores.</li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="when">Operação</span>
+                <div>
+                  <h3>Teleperformance — Atendimento via chat</h3>
+                  <ul>
+                    <li>Leitura de contexto do usuário e resolução de conflitos.</li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <span class="when">Formação</span>
+                <div>
+                  <h3>UFRN — C&amp;T, ênfase em Computação</h3>
+                  <p>Auxiliar em Gestão Empresarial (CCM).</p>
+                </div>
+              </article>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <p>© <span data-year></span> Yankee de Macedo</p>
+      <footer class="footer">
+        <div class="wrap">
+          <p class="section-label" data-reveal>Contato</p>
+          <div data-reveal>
+            <a class="footer-mail" href="mailto:yankeemauricio2@gmail.com">yankeemauricio2@gmail.com</a>
+            <div class="footer-links">
+              <a class="btn-ghost" href="https://www.linkedin.com/in/yankeemauricio/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a class="btn-ghost" href="https://github.com/yankeedemacedo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="footer-base">
+            <span>© <span data-year>2026</span> Yankee de Macedo</span>
+            <span><a href="index.html" style="text-decoration:none">← Início</a></span>
+          </div>
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

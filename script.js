@@ -1,82 +1,101 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
-  const header = document.querySelector(".site-header");
-  const magneticButtons = document.querySelectorAll("[data-magnetic]");
+  const yearNodes = document.querySelectorAll("[data-year]");
   const revealItems = document.querySelectorAll("[data-reveal]");
-  const yearNode = document.querySelector("[data-year]");
+  const parallaxItems = document.querySelectorAll("[data-parallax]");
 
-  if (yearNode) {
-    yearNode.textContent = new Date().getFullYear();
-  }
+  yearNodes.forEach((node) => {
+    node.textContent = String(new Date().getFullYear());
+  });
 
+  // Header: hairline surge apenas após rolagem (peso físico, sem salto)
+  const onScrollHeader = () => {
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 8);
+  };
+  window.addEventListener("scroll", onScrollHeader, { passive: true });
+  onScrollHeader();
+
+  // Menu mobile acessível
   if (menuToggle && mobileNav) {
+    const close = () => {
+      mobileNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    };
     menuToggle.addEventListener("click", () => {
       const isOpen = mobileNav.classList.toggle("is-open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
-
-    mobileNav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileNav.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
+    mobileNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", close));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
     });
   }
 
-  if (typeof IntersectionObserver !== "undefined") {
-    const markerObserver = new IntersectionObserver(
+  // Marca a página atual (funciona no pathname do GitHub Pages)
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".main-nav a, .mobile-nav a").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    if (href === currentPage) link.classList.add("is-active");
+    else if (currentPage === "" && href === "index.html") link.classList.add("is-active");
+  });
+
+  // Revelação com inércia expo-out; respeita prefers-reduced-motion
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion || typeof IntersectionObserver === "undefined") {
+    revealItems.forEach((item) => item.classList.add("visible"));
+  } else {
+    const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            markerObserver.unobserve(entry.target);
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.18 },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     );
-
-    revealItems.forEach((item) => markerObserver.observe(item));
-  } else {
-    revealItems.forEach((item) => item.classList.add("visible"));
+    revealItems.forEach((item) => observer.observe(item));
   }
 
-  magneticButtons.forEach((button) => {
-    button.addEventListener("pointermove", (event) => {
-      const rect = button.getBoundingClientRect();
-      const offsetX = (event.clientX - rect.left - rect.width / 2) / 10;
-      const offsetY = (event.clientY - rect.top - rect.height / 2) / 10;
+  // Parallaxe sutil com inércia (lerp via rAF): desloca até ±28px
+  if (!reduceMotion && parallaxItems.length > 0) {
+    const state = new Map();
+    parallaxItems.forEach((el) => state.set(el, { current: 0, target: 0 }));
 
-      button.style.setProperty("--x", `${offsetX}px`);
-      button.style.setProperty("--y", `${offsetY}px`);
-    });
+    const measure = () => {
+      const vh = window.innerHeight;
+      state.forEach((s, el) => {
+        const rect = el.getBoundingClientRect();
+        const center = rect.top + rect.height / 2;
+        const offset = (center - vh / 2) / vh; // -0.5 … 0.5
+        s.target = Math.max(-0.5, Math.min(0.5, offset)) * -56;
+      });
+    };
 
-    button.addEventListener("pointerleave", () => {
-      button.style.setProperty("--x", "0px");
-      button.style.setProperty("--y", "0px");
-    });
-  });
+    let ticking = false;
+    const render = () => {
+      ticking = false;
+      let settled = true;
+      state.forEach((s, el) => {
+        s.current += (s.target - s.current) * 0.08; // inércia
+        if (Math.abs(s.target - s.current) > 0.1) settled = false;
+        el.style.transform = `translate3d(0, ${s.current.toFixed(2)}px, 0)`;
+      });
+      if (!settled) requestRender();
+    };
+    const requestRender = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(render);
+      }
+    };
 
-  const navLinks = document.querySelectorAll(".main-nav a");
-
-  const activateCurrentNav = () => {
-    const currentPage =
-      window.location.pathname.split("/").pop() || "index.html";
-
-    navLinks.forEach((link) => {
-      const href = link.getAttribute("href") || "";
-      const isActive = href === currentPage;
-      link.classList.toggle("is-active", isActive);
-    });
-  };
-
-  window.addEventListener("scroll", () => {
-    if (header) {
-      header.classList.toggle("is-scrolled", window.scrollY > 14);
-    }
-    activateCurrentNav();
-  });
-
-  activateCurrentNav();
+    window.addEventListener("scroll", () => { measure(); requestRender(); }, { passive: true });
+    window.addEventListener("resize", () => { measure(); requestRender(); });
+    measure();
+    requestRender();
+  }
 });

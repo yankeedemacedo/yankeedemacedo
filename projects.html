@@ -3,164 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetos | Yankee de Macedo</title>
-    <meta
-      name="description"
-      content="Projetos e estudos em arquitetura de software, backend e desenvolvimento de soluções com impacto prático."
-    />
+    <title>Arquivo — Yankee de Macedo</title>
+    <meta name="description" content="Arquivo de trabalhos: Boreas (UFRN), Agendia (SaaS) e estudos de arquitetura." />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <div class="page-shell">
       <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="index.html" class="brand" aria-label="Ir para o início">
-            <span class="brand-mark">Y</span>
+        <div class="wrap nav-wrap">
+          <a href="index.html" class="brand" aria-label="Yankee de Macedo — início">
+            <span class="brand-mark" aria-hidden="true">YM</span>
             <span class="brand-name">Yankee de Macedo</span>
+            <span class="brand-role">Arquivo 2026</span>
           </a>
-
           <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="projects.html" class="is-active">Projetos</a>
+            <a href="projects.html" class="is-active">Arquivo</a>
             <a href="contact.html">Contato</a>
           </nav>
-
-          <a class="button button-primary" href="contact.html" data-magnetic
-            >Fale comigo</a
-          >
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-          >
-            Menu
-          </button>
+          <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
         </div>
-
-        <div class="mobile-nav" aria-label="Menu mobile">
-          <a href="index.html">Início</a>
-          <a href="about.html">Sobre</a>
-          <a href="projects.html">Projetos</a>
-          <a href="contact.html">Contato</a>
+        <div class="wrap">
+          <nav class="mobile-nav" id="menu-mobile" aria-label="Menu mobile">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="projects.html">Arquivo</a>
+            <a href="contact.html">Contato</a>
+          </nav>
         </div>
       </header>
 
-      <main>
-        <section class="section">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Projetos</p>
-            <h2>Trabalho que combina arquitetura, lógica e propósito.</h2>
-          </div>
-
-          <div class="container project-grid">
-            <article class="project-card" data-reveal>
-              <div class="project-icon">01</div>
-              <div class="project-meta">
-                <span class="project-tag">UFRN</span>
-                <span class="project-tag">Sistema institucional</span>
-              </div>
-              <h3>Boreas</h3>
-              <p>
-                Plataforma orientada à gestão operacional e manutenção, com foco
-                em fluxo, organização e apoio às decisões de rotina.
-              </p>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-icon">02</div>
-              <div class="project-meta">
-                <span class="project-tag">Node.js</span>
-                <span class="project-tag">Backend</span>
-              </div>
-              <h3>Agendia</h3>
-              <p>
-                Estrutura completa para regras de negócio, organização lógica e
-                robustez em um sistema de agendamento e operação.
-              </p>
-            </article>
-
-            <article class="project-card" data-reveal>
-              <div class="project-icon">03</div>
-              <div class="project-meta">
-                <span class="project-tag">Arquitetura</span>
-                <span class="project-tag">P&D</span>
-              </div>
-              <h3>Estudos de software</h3>
-              <p>
-                Iniciativas de pesquisa e desenvolvimento em engenharia,
-                arquitetura de software e criação de soluções bem pensadas e
-                sustentáveis.
-              </p>
-            </article>
+      <main id="conteudo">
+        <section class="page-hero">
+          <div class="wrap">
+            <p class="section-label">Arquivo / 03 trabalhos</p>
+            <h1 data-reveal>O que já foi construído.</h1>
+            <p class="lead" data-reveal>
+              Sem demo inventada: contexto, responsabilidade e decisões de cada trabalho.
+              O Boreas é sistema interno da UFRN, sem acesso público.
+            </p>
           </div>
         </section>
 
-        <section class="section section-muted">
-          <div class="container section-head" data-reveal>
-            <p class="section-kicker">Stack</p>
-            <h2>Ferramentas aplicadas com atenção à qualidade e ao impacto.</h2>
-          </div>
-
-          <div class="container about-grid">
-            <div class="about-copy" data-reveal>
-              <p>
-                Trabalho com ferramentas que me permitem desenvolver aplicações
-                consistentes, rápidas e fáceis de evoluir. O foco está em
-                tecnologias que apoiam boa arquitetura e execução confiável.
-              </p>
+        <section class="section">
+          <div class="wrap">
+            <div class="archive" data-reveal>
+              <article class="work-row" id="boreas" data-parallax>
+                <span class="idx">01</span>
+                <div>
+                  <h3>Boreas</h3>
+                  <p class="desc">Gestão de manutenção de climatização — equipamentos, ordens de serviço e histórico. Modelagem de dados, regras de negócio, APIs e integração com o frontend; manutenção contínua.</p>
+                </div>
+                <span class="tags">Django · Python · Next.js</span>
+                <span class="yr">UFRN</span>
+              </article>
+              <article class="work-row" id="agendia" data-parallax>
+                <span class="idx">02</span>
+                <div>
+                  <h3>Agendia</h3>
+                  <p class="desc">SaaS de eventos — criação, publicação e inscrições. Estrutura de rotas e serviços, regras de capacidade e organização de dados.</p>
+                </div>
+                <span class="tags">Node.js · REST</span>
+                <span class="yr">SaaS</span>
+              </article>
+              <article class="work-row" id="estudos" data-parallax>
+                <span class="idx">03</span>
+                <div>
+                  <h3>Estudos</h3>
+                  <p class="desc">APIs REST em Node.js — rotas, serviços, validação, ORM e contratos de erro consistentes.</p>
+                </div>
+                <span class="tags">Arquitetura · P&amp;D</span>
+                <span class="yr">Cont.</span>
+              </article>
             </div>
-
-            <div class="about-notes" data-reveal>
-              <article>
-                <span>JS</span>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>
-                    Base para interações, lógica e desenvolvimento de produtos
-                    digitais.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span>PY</span>
-                <div>
-                  <h3>Python</h3>
-                  <p>
-                    Aplicações robustas em regras de negócio, automação e
-                    arquitetura de backend.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <span>API</span>
-                <div>
-                  <h3>APIs</h3>
-                  <p>
-                    Integração entre sistemas, serviços e fluxos de informação
-                    com clareza estrutural.
-                  </p>
-                </div>
-              </article>
+            <div class="spec-list" data-reveal>
+              <div><h3>Materiais</h3><p>Python · Django · Node.js · React · Next.js · TypeScript · ORM · REST</p></div>
+              <div><h3>Método</h3><p>Fluxo real → modelo de dados → regras no backend → contrato de API → evolução registrada.</p></div>
+              <div><h3>Registro</h3><p>UFRN · Natal-RN · <a href="contact.html">contato</a></p></div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <p>© <span data-year></span> Yankee de Macedo</p>
+      <footer class="footer">
+        <div class="wrap">
+          <p class="section-label" data-reveal>Contato</p>
+          <div data-reveal>
+            <a class="footer-mail" href="mailto:yankeemauricio2@gmail.com">yankeemauricio2@gmail.com</a>
+            <div class="footer-links">
+              <a class="btn-ghost" href="https://www.linkedin.com/in/yankeemauricio/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a class="btn-ghost" href="https://github.com/yankeedemacedo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="footer-base">
+            <span>© <span data-year>2026</span> Yankee de Macedo</span>
+            <span><a href="index.html" style="text-decoration:none">← Início</a></span>
+          </div>
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
