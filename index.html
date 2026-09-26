@@ -6,397 +6,271 @@
     <title>Yankee de Macedo | Desenvolvedor Fullstack</title>
     <meta
       name="description"
-      content="Portfólio profissional de Yankee de Macedo, desenvolvedor fullstack e programador na UFRN."
+      content="Portfólio de Yankee de Macedo, desenvolvedor fullstack com foco em arquitetura de software, produtos digitais e soluções úteis."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient-layer" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="index.html" class="brand" aria-label="Ir para o início">
+            <span class="brand-mark">Y</span>
+            <span class="brand-name">Yankee de Macedo</span>
+          </a>
 
-    <header class="site-header">
-      <div class="container navbar">
-        <a href="index.html" class="brand" aria-label="Yankee de Macedo home">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 64 64" role="img" aria-label="Logo Yankee">
-              <path d="M16 16L32 34L48 16" />
-              <path d="M32 34V48" />
-            </svg>
-          </span>
-          <span>Yankee de Macedo</span>
-        </a>
+          <nav class="main-nav" aria-label="Menu principal">
+            <a href="index.html" class="is-active">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="projects.html">Projetos</a>
+            <a href="contact.html">Contato</a>
+          </nav>
 
-        <nav class="nav-links" aria-label="Menu principal">
-          <a href="index.html" class="active">Início</a>
+          <a class="button button-primary" href="contact.html" data-magnetic
+            >Fale comigo</a
+          >
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </div>
+
+        <div class="mobile-nav" aria-label="Menu mobile">
+          <a href="index.html">Início</a>
           <a href="about.html">Sobre</a>
           <a href="projects.html">Projetos</a>
           <a href="contact.html">Contato</a>
-        </nav>
+        </div>
+      </header>
 
-        <a class="btn btn-primary" href="contact.html">Fale comigo</a>
-        <button class="mobile-toggle" type="button" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+      <main>
+        <section id="top" class="hero section">
+          <div class="container hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow">
+                Desenvolvedor Fullstack · Arquitetura de Software
+              </p>
+              <h1>
+                Yankee de Macedo
+                <span>estrutura ideias em produtos que funcionam.</span>
+              </h1>
+              <p class="lead">
+                Trabalho na interseção entre código, produto e clareza
+                operacional. Crio sistemas com foco em desempenho,
+                confiabilidade e impacto real para pessoas e negócios.
+              </p>
 
-      <div class="container mobile-menu">
-        <a href="index.html">Início</a>
-        <a href="about.html">Sobre</a>
-        <a href="projects.html">Projetos</a>
-        <a href="contact.html">Contato</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="reveal">
-            <div class="eyebrow">
-              <i class="fa-solid fa-code"></i> Centro de Tecnologia da UFRN
-            </div>
-            <h1>
-              Desenvolvedor <span class="gradient-text">fullstack</span> com
-              visão estratégica.
-            </h1>
-            <p class="lead">
-              Sou Yankee de Macedo, desenvolvedor fullstack e estudante de
-              Ciência e Tecnologia e Engenharia da Computação na UFRN, com
-              interesse em arquitetura de software, integração de sistemas e
-              desenvolvimento backend. Tenho experiência prática na criação de
-              APIs RESTful, modelagem de dados e implementação de regras de
-              negócio com Python e Node.js.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="projects.html">Ver projetos</a>
-              <a class="btn btn-secondary" href="about.html">Sobre mim</a>
-            </div>
-            <div class="hero-meta">
-              <span
-                ><i class="fa-solid fa-circle-check" style="color: #d8d8d8"></i>
-                Fullstack</span
-              >
-              <span
-                ><i class="fa-solid fa-circle-check" style="color: #b8b8b8"></i>
-                Backend & APIs</span
-              >
-              <span
-                ><i class="fa-solid fa-circle-check" style="color: #8b8b8b"></i>
-                Impacto real</span
-              >
-            </div>
-
-            <div class="tech-loop reveal" aria-label="Tecnologias em movimento">
-              <div class="loop-track">
-                <span>Backend</span>
-                <span>APIs REST</span>
-                <span>Django</span>
-                <span>Node.js</span>
-                <span>Python</span>
-                <span>Arquitetura</span>
-                <span>Banco de dados</span>
+              <div class="hero-actions">
+                <a
+                  class="button button-primary"
+                  href="projects.html"
+                  data-magnetic
+                  >Ver projetos</a
+                >
+                <a
+                  class="button button-secondary"
+                  href="about.html"
+                  data-magnetic
+                  >Sobre mim</a
+                >
               </div>
-              <div class="loop-track loop-track-secondary">
-                <span>Integração</span>
-                <span>Sistemas</span>
-                <span>Infraestrutura</span>
-                <span>IA</span>
-                <span>Escalabilidade</span>
-                <span>Desenvolvimento</span>
-                <span>Dados</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="profile-card reveal">
-            <div class="profile-visual">
-              <div class="profile-art"></div>
-              <div class="avatar"><i class="fa-brands fa-github"></i></div>
-              <div class="profile-card-content">
-                <div class="small-label">Perfil</div>
-                <h3>Arquitetura, produto e código.</h3>
-                <div class="stats-box">
-                  <div class="stat">
+              <ul class="hero-list" aria-label="Principais áreas de atuação">
+                <li>Backend & APIs</li>
+                <li>Arquitetura</li>
+                <li>Product thinking</li>
+              </ul>
+            </div>
+
+            <aside class="hero-panel" data-reveal>
+              <div class="panel-frame">
+                <div class="panel-header">
+                  <span>Perfil</span>
+                  <span>2026</span>
+                </div>
+
+                <div class="profile-block">
+                  <div class="avatar" aria-hidden="true">Y</div>
+                  <div>
+                    <p class="mini-label">Atuação</p>
+                    <h2>Engenharia de software com visão de produto.</h2>
+                  </div>
+                </div>
+
+                <div class="metrics">
+                  <div>
                     <strong>+3</strong>
-                    <span>anos</span>
+                    <span>Anos</span>
                   </div>
-                  <div class="stat">
+                  <div>
                     <strong>10+</strong>
-                    <span>projetos</span>
+                    <span>Projetos</span>
                   </div>
-                  <div class="stat">
+                  <div>
                     <strong>UFRN</strong>
-                    <span>base</span>
+                    <span>Base</span>
                   </div>
                 </div>
               </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+          <div class="container section-head" data-reveal>
+            <p class="section-kicker">Sobre</p>
+            <h2>Construo soluções com rigor técnico e sensibilidade humana.</h2>
+          </div>
+
+          <div class="container about-grid">
+            <div class="about-copy" data-reveal>
+              <p>
+                Sou um desenvolvedor que gosta de resolver problemas com
+                clareza. Minha rotina é baseada em entender o contexto real,
+                modelar a melhor estrutura e transformar ideias em sistemas com
+                boa arquitetura e boa experiência de uso.
+              </p>
+              <p>
+                Acredito que tecnologia não é só código; é organização,
+                raciocínio, comunicação e responsabilidade. Por isso, meu
+                trabalho busca unir técnica, propósito e percepção de quem vai
+                usar aquilo que eu construo.
+              </p>
+            </div>
+
+            <div class="about-notes" data-reveal>
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Raciocínio estrutural</h3>
+                  <p>
+                    Organizo sistemas para escalar com consistência e segurança.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Foco em impacto</h3>
+                  <p>
+                    Valorizo soluções que simplificam processos e melhoram o dia
+                    a dia.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Aprendizado contínuo</h3>
+                  <p>
+                    Exploro novas tecnologias para evoluir com visão crítica e
+                    prática.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section section-soft">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Interesses e estudos</h2>
-            <p>
-              Como estudante de Engenharia da Computação, meu caminho está
-              fortemente ligado ao backend e à arquitetura de sistemas.
-            </p>
+        <section id="projects" class="section">
+          <div class="container section-head" data-reveal>
+            <p class="section-kicker">Projetos</p>
+            <h2>Uma seleção de trabalho, pensado em realidade e escala.</h2>
           </div>
 
-          <div class="interest-grid">
-            <article class="interest-card reveal">
-              <div class="mini-label">Foco atual</div>
-              <h3>Backend e integração</h3>
-              <p>
-                Meu interesse principal está em desenvolvimento backend,
-                arquitetura de software, APIs, persistência de dados e
-                integração entre sistemas. Esse é o eixo no qual mais venho
-                construindo conhecimento prático.
-              </p>
-              <div class="chip-group">
-                <span>APIs</span>
-                <span>Node.js</span>
-                <span>Django</span>
-                <span>Dados</span>
-              </div>
-            </article>
-
-            <article class="interest-card reveal">
-              <div class="mini-label">Visão de futuro</div>
-              <h3>IA e sistemas inteligentes</h3>
-              <p>
-                Quando tiver uma base mais sólida em engenharia de software, meu
-                próximo passo será aprofundar-me em engenharia de IA e
-                integração de sistemas inteligentes com soluções reais.
-              </p>
-              <div class="chip-group">
-                <span>IA</span>
-                <span>Integração</span>
-                <span>Sistemas</span>
-                <span>Escalabilidade</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="background: rgba(255, 255, 255, 0.18)">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Projetos em destaque</h2>
-            <p>
-              Soluções que unem estrutura técnica, performance e propósito em
-              contextos reais.
-            </p>
-          </div>
-
-          <div class="grid-3">
-            <article class="project-card reveal">
-              <div
-                class="icon-box"
-                style="background: rgba(34, 211, 238, 0.12); color: #67e8f9"
-              >
-                <i class="fa-solid fa-fan"></i>
+          <div class="container project-grid">
+            <article class="project-card" data-reveal>
+              <div class="project-icon">01</div>
+              <div class="project-meta">
+                <span class="project-tag">UFRN</span>
+                <span class="project-tag">Sistema institucional</span>
               </div>
               <h3>Boreas</h3>
-              <div class="badge-row">
-                <span class="badge">UFRN</span>
-                <span class="badge">INSTITUCIONAL</span>
-              </div>
               <p>
-                Plataforma interna que organiza e otimizava o fluxo de
-                manutenção de ar-condicionado, com forte foco em logística e
-                impacto operacional.
+                Plataforma orientada à gestão operacional e manutenção, com foco
+                em fluxo, organização e apoio às decisões de rotina.
               </p>
             </article>
 
-            <article class="project-card reveal">
-              <div
-                class="icon-box"
-                style="background: rgba(52, 211, 153, 0.12); color: #6ee7b7"
-              >
-                <i class="fa-brands fa-node-js"></i>
+            <article class="project-card" data-reveal>
+              <div class="project-icon">02</div>
+              <div class="project-meta">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Backend</span>
               </div>
               <h3>Agendia</h3>
-              <div class="badge-row">
-                <span class="badge">NODE.JS</span>
-                <span class="badge">BACKEND</span>
-              </div>
               <p>
-                Projeto que marcou minha entrada no desenvolvimento backend, com
-                foco em regras de negócio, organização de servidor e estrutura
-                sólida.
+                Estrutura robusta para regras de negócio, estrutura de servidor
+                e organização lógica de um sistema de agendamento e operação.
               </p>
             </article>
 
-            <article class="project-card reveal">
-              <div
-                class="icon-box"
-                style="background: rgba(167, 139, 250, 0.12); color: #c4b5fd"
+            <article class="project-card" data-reveal>
+              <div class="project-icon">03</div>
+              <div class="project-meta">
+                <span class="project-tag">Arquitetura</span>
+                <span class="project-tag">P&D</span>
+              </div>
+              <h3>Estudos de software</h3>
+              <p>
+                Iniciativas de pesquisa e desenvolvimento em engenharia,
+                arquitetura de software e criação de soluções bem pensadas.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+          <div class="container contact-wrap">
+            <div class="contact-copy" data-reveal>
+              <p class="section-kicker">Contato</p>
+              <h2>
+                Se houver uma ideia, um projeto ou uma conversa relevante, eu
+                quero ouvir.
+              </h2>
+              <p>
+                Estou disponível para oportunidades, colaborações e projetos que
+                exijam clareza, técnica e atenção aos detalhes.
+              </p>
+            </div>
+
+            <div class="contact-links" data-reveal>
+              <a href="mailto:yankeemauricio2@gmail.com"
+                >yankeemauricio2@gmail.com</a
               >
-                <i class="fa-solid fa-brain"></i>
-              </div>
-              <h3>Arquitetura e estudo</h3>
-              <div class="badge-row">
-                <span class="badge">P&D</span>
-                <span class="badge">ARQUITETURA</span>
-              </div>
-              <p>
-                Iniciativa de estudo e desenvolvimento em arquitetura de
-                software, com foco em backend escalável, modelagem de dados e
-                organização de soluções práticas.
-              </p>
-            </article>
+              <a
+                href="https://www.linkedin.com/in/yankeemauricio/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/yankeedemacedo"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
           </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>© <span data-year></span> Yankee de Macedo</p>
         </div>
-      </section>
-
-      <section class="section" style="background: rgba(125, 143, 95, 0.06)">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Ferramentas e stack</h2>
-            <p>
-              Um ecossistema pensado para construir software eficiente,
-              organizado e pronto para o futuro.
-            </p>
-          </div>
-
-          <div class="grid-3">
-            <article class="panel reveal">
-              <h3>
-                <i
-                  class="fa-solid fa-server"
-                  style="color: #a78bfa; margin-right: 0.5rem"
-                ></i
-                >Backend
-              </h3>
-              <ul class="tech-list">
-                <li>
-                  <span>Node.js</span>
-                  <div class="bar"><span style="width: 92%"></span></div>
-                </li>
-                <li>
-                  <span>Python</span>
-                  <div class="bar"><span style="width: 86%"></span></div>
-                </li>
-                <li>
-                  <span>Django</span>
-                  <div class="bar"><span style="width: 80%"></span></div>
-                </li>
-              </ul>
-            </article>
-
-            <article class="panel reveal">
-              <h3>
-                <i
-                  class="fa-solid fa-laptop-code"
-                  style="color: #67e8f9; margin-right: 0.5rem"
-                ></i
-                >Frontend
-              </h3>
-              <ul class="tech-list">
-                <li>
-                  <span>React</span>
-                  <div class="bar"><span style="width: 90%"></span></div>
-                </li>
-                <li>
-                  <span>JavaScript</span>
-                  <div class="bar"><span style="width: 94%"></span></div>
-                </li>
-                <li>
-                  <span>TailwindCSS</span>
-                  <div class="bar"><span style="width: 88%"></span></div>
-                </li>
-              </ul>
-            </article>
-
-            <article class="panel reveal">
-              <h3>
-                <i
-                  class="fa-solid fa-rocket"
-                  style="color: #60a5fa; margin-right: 0.5rem"
-                ></i
-                >Workflow
-              </h3>
-              <ul class="tech-list">
-                <li>
-                  <span>Git & GitHub</span>
-                  <div class="bar"><span style="width: 95%"></span></div>
-                </li>
-                <li>
-                  <span>IA aplicada</span>
-                  <div class="bar"><span style="width: 84%"></span></div>
-                </li>
-                <li>
-                  <span>APIs REST</span>
-                  <div class="bar"><span style="width: 90%"></span></div>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Trajetória e visão</h2>
-            <p>
-              Uma combinação de pesquisa acadêmica, aporte técnico e
-              desenvolvimento de software com impacto real.
-            </p>
-          </div>
-
-          <div class="timeline reveal">
-            <article class="timeline-item">
-              <strong>Backend e arquitetura</strong>
-              <p>
-                Atuação como bolsista programador de TI no Centro de Tecnologia
-                da UFRN, com foco em desenvolvimento fullstack e backend no
-                sistema Boreas.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <strong>Análise e modelagem de negócio</strong>
-              <p>
-                Participação em pesquisa e desenvolvimento de relatórios e
-                gráficos técnicos, com foco em análise de dados e escrita
-                técnica aplicada.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <strong>Crescimento técnico</strong>
-              <p>
-                Fortalecimento em APIs RESTful, Django, Node.js, persistência de
-                dados e boas práticas de arquitetura backend para resolver
-                problemas complexos.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span data-year></span> Yankee de Macedo. Desenvolvido para destacar
-          trabalho, visão e impacto.
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
