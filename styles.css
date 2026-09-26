@@ -70,14 +70,25 @@ img {
 }
 
 .brand-mark {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.35rem;
+  height: 2.35rem;
   display: grid;
   place-items: center;
-  border-radius: 0.8rem;
-  background: #f2f2f2;
+  border-radius: 0.82rem;
+  background: #f4f4f4;
   color: #111111;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.08);
+  overflow: hidden;
+}
+
+.brand-mark svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: currentColor;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }
 
 .nav-links {
@@ -130,13 +141,14 @@ img {
 
 .mobile-toggle {
   display: none;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #f5f5f5;
+  color: #0d0d0d;
   width: 42px;
   height: 42px;
   border-radius: 0.8rem;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.08);
 }
 
 .mobile-menu {
@@ -691,6 +703,19 @@ h4 {
 }
 
 @media (max-width: 900px) {
+  .navbar {
+    gap: 0.75rem;
+  }
+
+  .brand {
+    font-size: 0.96rem;
+    min-width: 0;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+
   .hero-grid,
   .grid-3,
   .grid-2,
@@ -707,6 +732,7 @@ h4 {
   .mobile-toggle {
     display: inline-grid;
     place-items: center;
+    margin-left: auto;
   }
 
   .mobile-menu.is-open {
