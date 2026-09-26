@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Yankee de Macedo</title>
+    <meta
+      name="description"
+      content="Entre em contato com Yankee de Macedo para projetos, colaborações e oportunidades."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Yankee de Macedo home">
+          <span class="brand-mark">Y</span>
+          <span>Yankee de Macedo</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="about.html">Sobre</a>
+          <a href="projects.html">Projetos</a>
+          <a href="contact.html" class="active">Contato</a>
+        </nav>
+
+        <a class="btn btn-primary" href="mailto:yankeemauricio2@gmail.com"
+          >E-mail</a
+        >
+        <button class="mobile-toggle" type="button" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="container mobile-menu">
+        <a href="index.html">Início</a>
+        <a href="about.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
+        <a href="contact.html">Contato</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Vamos conversar</h2>
+            <p>
+              Seja para uma oportunidade, um projeto, uma colaboração ou uma
+              conversa sobre tecnologia, meu contato está aberto.
+            </p>
+          </div>
+
+          <div class="contact-grid reveal">
+            <article class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <h3>E-mail</h3>
+              <p>Para oportunidades e parcerias.</p>
+              <a class="contact-link" href="mailto:yankeemauricio2@gmail.com"
+                >yankeemauricio2@gmail.com</a
+              >
+            </article>
+
+            <article class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <h3>LinkedIn</h3>
+              <p>Conecte-se profissionalmente.</p>
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/yankeemauricio/"
+                target="_blank"
+                rel="noreferrer"
+                >linkedin.com/in/yankeemauricio</a
+              >
+            </article>
+
+            <article class="contact-card">
+              <div class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <h3>GitHub</h3>
+              <p>Veja meus repositórios e estudos.</p>
+              <a
+                class="contact-link"
+                href="https://github.com/yankeedemacedo"
+                target="_blank"
+                rel="noreferrer"
+                >github.com/yankeedemacedo</a
+              >
+            </article>
+          </div>
+
+          <form
+            class="form-card reveal"
+            action="mailto:yankeemauricio2@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Seu nome" />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="seu@email.com"
+              />
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Fale sobre o projeto ou oportunidade..."
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span data-year></span> Yankee de Macedo. Desenvolvido para destacar
+          trabalho, visão e impacto.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
