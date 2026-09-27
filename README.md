@@ -84,14 +84,22 @@ Sistema institucional da UFRN para gestão e organização de manutenções de a
 
 ### Agendia
 
-Sistema SaaS para gestão, publicação e inscrição em eventos.
+Plataforma de eventos: catálogo público, inscrição em 1-clique, waitlist com promoção automática, ingresso com QR, check-in, certificados e painel do organizador — com nova identidade tech dark.
 
 - Stack principal: Node.js
 - Foco: regras de negócio, estrutura de APIs e organização de dados
 
-### Outras APIs de estudo
+### CtrlX
 
-APIs RESTful desenvolvidas em Node.js para prática intensiva de arquitetura backend e integração de sistemas.
+Workstation de produtividade para estudantes e pesquisadores: guarda links em Spaces, separa ferramentas de uso diário (Dock) do que é estudo (fila de rascunhos) e transforma cada leitura em uma ficha de estudo (Zettelkasten + Active Recall) através do Modo Foco — um link por vez, sem distrações.
+
+- Foco: produtividade, organização do conhecimento e experiência de estudo
+
+### Fiz
+
+Task manager moderno, rápido e local-first: funciona offline (PWA) e persiste no navegador. Acompanha uma API Express opcional (api/) para sincronizar dados — sem ela, o app usa localStorage.
+
+- Foco: offline-first, sincronia opcional e simplicidade
 
 ---
 

@@ -6,6 +6,7 @@ Static portfolio site. No build, no package manager, no tests, no lint, no CI.
 
 - `index.html`, `about.html`, `projects.html`, `contact.html` — standalone pages, no templating. Header/nav/footer markup is duplicated in each file; any change to it must be repeated in all 4.
 - `404.html`, `favicon.svg`, `robots.txt` — error page, brand mark, crawler allow. Keep asset refs relative.
+- `public/` — project screenshots with semantic names (`agendia-desktop.png`, `ctrlx-mobile.png`, …). Shown only on `projects.html` as dossiers: pure-CSS laptop + phone mockups (grayscale at rest, color on hover), Boreas logo on a dark plate via `invert(1) hue-rotate(180deg)`. Keep paths relative; add `loading="lazy"` + descriptive `alt` to new images.
 - `styles.css` — single shared design system (tokens → base → layout → components). Identity: "Minimalismo Industrial / Editorial Sci-Fi", strictly monochrome (`#0A0A0A` / `#131313` / `#1C1C1C` / silver / `#F5F5F4`); type Archivo (expanded display, uppercase) + Inter (body). Vertical rhythm follows the golden ratio (8.5 / 5.25 / 3.25rem); all motion uses expo-out `cubic-bezier(0.16, 1, 0.3, 1)`.
 - `script.js` — single shared script, loaded via `<script src="script.js"></script>` at end of `<body>` on every page.
 - `README.md` — profile content, not site content. Site copy lives in the HTML files.
@@ -16,7 +17,7 @@ No dev server configured. Preview with any static server, e.g. `python3 -m http.
 
 ## Conventions (script.js ↔ HTML contract)
 
-- `data-reveal` — element starts hidden and `script.js` adds `.visible` via IntersectionObserver (skipped when `prefers-reduced-motion`). New sections must include `data-reveal` or pair with a visible fallback.
+- `data-reveal` — element starts hidden and `script.js` adds `.visible` via IntersectionObserver (skipped when `prefers-reduced-motion`). Safety net: a 1.5s timer force-reveals leftovers, and a `<noscript>` style in each page reveals everything with JS off. New sections must include `data-reveal` or pair with a visible fallback.
 - `data-year` — footer year auto-filled by `script.js`. Keep the `<span data-year>` in footers.
 - `data-copy` — copy-to-clipboard button value (contact page). JS restores the label after ~1.6s.
 - Nav active state is set two ways: hardcoded `class="is-active"` in each page's `.main-nav` link AND runtime matching in `script.js` (`href` vs URL filename, applied to `.main-nav a` and `.mobile-nav a`). When adding a page, set the hardcoded class and use a plain relative `href` (`page.html`) so the JS matches.

@@ -60,6 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((item) => observer.observe(item));
   }
 
+  // Rede de segurança: nenhum bloco pode ficar invisível para sempre.
+  // Se o observer não disparar (aba em segundo plano, IO instável),
+  // o timer revela tudo após 1.5s. Com JS desligado, o <noscript> do
+  // <head> de cada página faz o mesmo via CSS.
+  window.setTimeout(() => {
+    revealItems.forEach((item) => item.classList.add("visible"));
+  }, 1500);
+
   // Parallaxe sutil com inércia (lerp via rAF): desloca até ±28px
   if (!reduceMotion && parallaxItems.length > 0) {
     const state = new Map();

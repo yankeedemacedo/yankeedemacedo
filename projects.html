@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arquivo — Yankee de Macedo</title>
-    <meta name="description" content="Arquivo de trabalhos: Boreas (UFRN), Agendia (SaaS) e estudos de arquitetura." />
+    <meta name="description" content="Arquivo de trabalhos: Agendia, CtrlX, Fiz e Boreas (UFRN)." />
     <meta name="theme-color" content="#0A0A0A" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <noscript><style>[data-reveal] { opacity: 1 !important; transform: none !important; }</style></noscript>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -46,7 +47,7 @@
       <main id="conteudo">
         <section class="page-hero">
           <div class="wrap">
-            <p class="section-label">Arquivo / 03 trabalhos</p>
+            <p class="section-label">Arquivo / 04 trabalhos</p>
             <h1 data-reveal>O que já foi construído.</h1>
             <p class="lead" data-reveal>
               Sem demo inventada: contexto, responsabilidade e decisões de cada trabalho.
@@ -58,32 +59,101 @@
         <section class="section">
           <div class="wrap">
             <div class="archive" data-reveal>
-              <article class="work-row" id="boreas" data-parallax>
+              <article class="work-row dossier" id="agendia" data-parallax>
                 <span class="idx">01</span>
                 <div>
-                  <h3>Boreas</h3>
-                  <p class="desc">Gestão de manutenção de climatização — equipamentos, ordens de serviço e histórico. Modelagem de dados, regras de negócio, APIs e integração com o frontend; manutenção contínua.</p>
-                </div>
-                <span class="tags">Django · Python · Next.js</span>
-                <span class="yr">UFRN</span>
-              </article>
-              <article class="work-row" id="agendia" data-parallax>
-                <span class="idx">02</span>
-                <div>
                   <h3>Agendia</h3>
-                  <p class="desc">SaaS de eventos — criação, publicação e inscrições. Estrutura de rotas e serviços, regras de capacidade e organização de dados.</p>
+                  <p class="desc">Plataforma de eventos com identidade tech dark: catálogo público, inscrição em 1-clique, waitlist com promoção automática, ingresso com QR, check-in, certificados e painel do organizador.</p>
                 </div>
                 <span class="tags">Node.js · REST</span>
                 <span class="yr">SaaS</span>
+                <figure class="devices">
+                  <div class="laptop">
+                    <div class="laptop-frame">
+                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                      <div class="laptop-screen">
+                        <img src="public/agendia-desktop.png" alt="Página inicial do Agendia no desktop: chamada, estatísticas e busca de eventos" loading="lazy" decoding="async" />
+                      </div>
+                    </div>
+                    <div class="laptop-base" aria-hidden="true"></div>
+                  </div>
+                  <div class="phone">
+                    <div class="phone-notch" aria-hidden="true"></div>
+                    <div class="phone-screen">
+                      <img src="public/agendia-mobile.png" alt="Página inicial do Agendia no celular" loading="lazy" decoding="async" />
+                    </div>
+                  </div>
+                  <figcaption>FIG. 01 — Agendia · desktop + mobile</figcaption>
+                </figure>
               </article>
-              <article class="work-row" id="estudos" data-parallax>
+              <article class="work-row dossier" id="ctrlx" data-parallax>
+                <span class="idx">02</span>
+                <div>
+                  <h3>CtrlX</h3>
+                  <p class="desc">Workstation de produtividade para estudantes e pesquisadores: guarda links em Spaces, separa ferramentas de uso diário (Dock) da fila de rascunhos e transforma cada leitura em ficha de estudo (Zettelkasten + Active Recall) pelo Modo Foco — um link por vez, sem distrações.</p>
+                </div>
+                <span class="tags">Estudo · Foco</span>
+                <span class="yr">Web app</span>
+                <figure class="devices">
+                  <div class="laptop">
+                    <div class="laptop-frame">
+                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                      <div class="laptop-screen">
+                        <img src="public/ctrlx-desktop.png" alt="Página inicial do CtrlX no desktop: chamada, fichas de estudo e recursos" loading="lazy" decoding="async" />
+                      </div>
+                    </div>
+                    <div class="laptop-base" aria-hidden="true"></div>
+                  </div>
+                  <div class="phone">
+                    <div class="phone-notch" aria-hidden="true"></div>
+                    <div class="phone-screen">
+                      <img src="public/ctrlx-mobile.png" alt="Página inicial do CtrlX no celular" loading="lazy" decoding="async" />
+                    </div>
+                  </div>
+                  <figcaption>FIG. 02 — CtrlX · desktop + mobile</figcaption>
+                </figure>
+              </article>
+              <article class="work-row dossier" id="fiz" data-parallax>
                 <span class="idx">03</span>
                 <div>
-                  <h3>Estudos</h3>
-                  <p class="desc">APIs REST em Node.js — rotas, serviços, validação, ORM e contratos de erro consistentes.</p>
+                  <h3>Fiz</h3>
+                  <p class="desc">Task manager moderno, rápido e local-first: funciona offline (PWA) e persiste no navegador. Acompanha uma API Express opcional (api/) para sincronizar dados — sem ela, o app usa localStorage.</p>
                 </div>
-                <span class="tags">Arquitetura · P&amp;D</span>
-                <span class="yr">Cont.</span>
+                <span class="tags">PWA · Offline</span>
+                <span class="yr">Local-first</span>
+                <figure class="devices">
+                  <div class="laptop">
+                    <div class="laptop-frame">
+                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                      <div class="laptop-screen">
+                        <img src="public/fiz-desktop.png" alt="App Fiz no desktop: busca, visualizações, categorias e lista de tarefas" loading="lazy" decoding="async" />
+                      </div>
+                    </div>
+                    <div class="laptop-base" aria-hidden="true"></div>
+                  </div>
+                  <div class="phone">
+                    <div class="phone-notch" aria-hidden="true"></div>
+                    <div class="phone-screen">
+                      <img src="public/fiz-mobile.png" alt="App Fiz no celular: nova tarefa e estado vazio" loading="lazy" decoding="async" />
+                    </div>
+                  </div>
+                  <figcaption>FIG. 03 — Fiz · desktop + mobile</figcaption>
+                </figure>
+              </article>
+              <article class="work-row dossier" id="boreas" data-parallax>
+                <span class="idx">04</span>
+                <div>
+                  <h3>Boreas</h3>
+                  <p class="desc">Sistema institucional da UFRN para gestão e organização de manutenções de ar-condicionado — equipamentos, ordens de serviço e histórico. Modelagem de dados, regras de negócio, APIs e integração com o frontend; manutenção contínua.</p>
+                </div>
+                <span class="tags">Django · Python · Next.js</span>
+                <span class="yr">UFRN</span>
+                <figure class="devices devices-single">
+                  <div class="logoplate">
+                    <img src="public/boreas-ufrn.png" alt="Logotipos do projeto Boreas e da UFRN" loading="lazy" decoding="async" />
+                  </div>
+                  <figcaption>FIG. 04 — Boreas + UFRN · material institucional</figcaption>
+                </figure>
               </article>
             </div>
             <div class="spec-list" data-reveal>
