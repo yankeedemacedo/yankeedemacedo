@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://yankeedemacedo.tech/</loc>
+       <lastmod>2026-10-01T02:07:06+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://yankeedemacedo.tech/index.html</loc>
+       <lastmod>2026-10-01T02:07:06+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://yankeedemacedo.tech/about.html</loc>
+       <lastmod>2026-10-01T02:07:06+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://yankeedemacedo.tech/projects.html</loc>
+       <lastmod>2026-10-01T02:07:06+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://yankeedemacedo.tech/contact.html</loc>
+       <lastmod>2026-10-01T02:07:06+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+</urlset>
