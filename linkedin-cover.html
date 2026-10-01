@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1584" />
+    <title>Capa LinkedIn — Stack</title>
+    <!--
+      EXPORTAÇÃO (tamanho exato do banner: 1584 × 396):
+      1. Abra este arquivo no navegador COM internet (logos vêm de CDN).
+      2. DevTools (F12) > modo responsivo (Ctrl+Shift+M) em 1584 × 396.
+      3. Aguarde os ícones carregarem > menu ⋮ do DevTools > "Capture screenshot".
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.simpleicons.org" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; }
+      body {
+        width: 1584px;
+        height: 396px;
+        background: #0a0a0a;
+        color: #f5f5f4;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: repeating-linear-gradient(
+          90deg,
+          transparent 0 158px,
+          rgba(245, 245, 244, 0.05) 158px 159px
+        );
+        pointer-events: none;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 220px);
+        border: 1px solid rgba(245, 245, 244, 0.18);
+        position: relative;
+        background: #0a0a0a;
+      }
+      .cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        height: 158px;
+        border-right: 1px solid rgba(245, 245, 244, 0.18);
+      }
+      .cell:nth-child(5n) { border-right: none; }
+      .cell:nth-child(-n + 5) { border-bottom: 1px solid rgba(245, 245, 244, 0.18); }
+      .cell img { width: 64px; height: 64px; display: block; }
+      .cell .txt {
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.06em;
+        color: #f5f5f4;
+        line-height: 64px;
+      }
+      .cell span {
+        font-size: 15px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #7c7c7a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="cell"><img src="https://cdn.simpleicons.org/python/white" alt="Python" /><span>Python</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/django/white" alt="Django" /><span>Django</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/nodedotjs/white" alt="Node.js" /><span>Node.js</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/express/white" alt="Express" /><span>Express</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/react/white" alt="React" /><span>React</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/nextdotjs/white" alt="Next.js" /><span>Next.js</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/typescript/white" alt="TypeScript" /><span>TypeScript</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind" /><span>Tailwind</span></div>
+      <div class="cell"><span class="txt" aria-hidden="true">{ }</span><span>REST APIs</span></div>
+      <div class="cell"><img src="https://cdn.simpleicons.org/git/white" alt="Git" /><span>Git</span></div>
+    </div>
+  </body>
+</html>

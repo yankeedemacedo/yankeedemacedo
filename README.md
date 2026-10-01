@@ -3,7 +3,7 @@
 <div align="center">
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Portfolio-0D1117?style=for-the-badge&logo=github&logoColor=white)](https://yankeedemacedo.github.io/yankeedemacedo/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yankeemauricio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yankeedemacedo/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yankeemauricio2@gmail.com)
 
 </div>
@@ -145,7 +145,7 @@ Quando consolidar uma base sólida em engenharia de software, desejo aprofundar-
 
 ## Contato
 
-- LinkedIn: linkedin.com/in/yankeemauricio/
+- LinkedIn: linkedin.com/in/yankeedemacedo/
 - GitHub: github.com/yankeedemacedo
 - E-mail: yankeemauricio2@gmail.com
 
