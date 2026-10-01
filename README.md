@@ -148,7 +148,3 @@ Quando consolidar uma base sólida em engenharia de software, desejo aprofundar-
 - LinkedIn: linkedin.com/in/yankeedemacedo/
 - GitHub: github.com/yankeedemacedo
 - E-mail: yankeemauricio2@gmail.com
-
----
-
-Se quiser, também posso adaptar o README para um estilo mais institucional, mais técnico ou mais criativo, conforme o tom do seu portfólio.
