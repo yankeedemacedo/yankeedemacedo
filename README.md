@@ -84,6 +84,93 @@ Bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo sistem
 
 ---
 
+<<<<<<< HEAD
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yankeedemacedo&label=profile%20views&color=0A0A0A&style=flat-square" alt="Profile views" />
 </p>
+=======
+## Formação
+
+- Bacharelado em Ciência e Tecnologia com ênfase em Computação - UFRN
+- Previsão de conclusão: 2027.2
+- Auxiliar em Gestão Empresarial - CCM
+
+---
+
+## Projetos em destaque
+
+### Boreas
+
+Sistema institucional da UFRN para gestão e organização de manutenções de ar-condicionado.
+
+- Stack principal: Django, Python, Next.js
+- Foco: backend, regras de negócio e dados
+- Observação: projeto interno da instituição
+
+### Agendia
+
+Plataforma de eventos: catálogo público, inscrição em 1-clique, waitlist com promoção automática, ingresso com QR, check-in, certificados e painel do organizador — com nova identidade tech dark.
+
+- Stack principal: Node.js
+- Foco: regras de negócio, estrutura de APIs e organização de dados
+
+### CtrlX
+
+Workstation de produtividade para estudantes e pesquisadores: guarda links em Spaces, separa ferramentas de uso diário (Dock) do que é estudo (fila de rascunhos) e transforma cada leitura em uma ficha de estudo (Zettelkasten + Active Recall) através do Modo Foco — um link por vez, sem distrações.
+
+- Foco: produtividade, organização do conhecimento e experiência de estudo
+
+### Fiz
+
+Task manager moderno, rápido e local-first: funciona offline (PWA) e persiste no navegador. Acompanha uma API Express opcional (api/) para sincronizar dados — sem ela, o app usa localStorage.
+
+- Foco: offline-first, sincronia opcional e simplicidade
+
+---
+
+## Stack tecnológica
+
+**Desenvolvimento Backend:**
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+
+**Desenvolvimento Frontend:**
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+**Ecossistema & Workflow:**
+
+- Git e GitHub
+- ORM e bancos de dados
+- Estruturação de rotas e serviços
+- APIs RESTful
+- Persistência de dados
+
+---
+
+## Interesses e estudos
+
+### Foco atual
+
+- Backend
+- Arquitetura de software
+- Integração de sistemas
+- Persistência de dados
+- APIs e regras de negócio
+
+### Objetivo futuro
+
+Quando consolidar uma base sólida em engenharia de software, desejo aprofundar-me em engenharia de IA e integração de sistemas inteligentes, conectando desenvolvimento backend, dados e automação em soluções reais.
+
+---
+
+## Contato
+
+- LinkedIn: linkedin.com/in/yankeedemacedo/
+- GitHub: github.com/yankeedemacedo
+- E-mail: yankeemauricio2@gmail.com
+>>>>>>> fb63cdbbc3afb98fabd2dcfeb149c3b5ba20042f
