@@ -81,9 +81,3 @@ Bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo sistem
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=yankeedemacedo&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&rank_icon=github" alt="GitHub stats" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yankeedemacedo&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&langs_count=8" alt="Top languages" />
 </p>
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yankeedemacedo&label=profile%20views&color=0A0A0A&style=flat-square" alt="Profile views" />
-</p>
