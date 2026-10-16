@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=24&duration=2400&pause=900&color=FFF&center=true&vCenter=true&repeat=true&width=1100&lines=Desenvolvedor+Fullstack+%E2%80%A2+backend+%E2%80%A2+arquitetura+de+software;Ci%C3%AAncia+e+Tecnologia+%E2%80%A2+Engenharia+de+Computa%C3%A7%C3%A3o+%E2%80%A2+UFRN;integra%C3%A7%C3%A3o+de+sistemas+%E2%80%A2+APIs+%E2%80%A2+dados"
+    src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=24&duration=2400&pause=900&color=FFF&center=true&vCenter=true&repeat=true&width=1100&lines=Desenvolvedor+Web+%E2%80%A2+backend+%E2%80%A2+arquitetura+de+software;Ci%C3%AAncia+e+Tecnologia+%E2%80%A2+Engenharia+de+Computa%C3%A7%C3%A3o+%E2%80%A2+UFRN;em+evolu%C3%A7%C3%A3o+para+Engenharia+de+IA"
     alt="Typing SVG"
   />
 </p>
@@ -22,15 +22,13 @@
 
 ## Sobre mim
 
-Desenvolvedor Fullstack com foco em backend, arquitetura de software e integração de sistemas. Graduando em Ciência e Tecnologia e Engenharia da Computação na UFRN.
+Desenvolvedor Web com foco em backend, arquitetura de software e integração de sistemas — e entusiasta/estudante de IA em evolução para Engenharia de IA. Graduando em Ciência e Tecnologia e Engenharia da Computação na UFRN.
 
 Bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo sistemas institucionais robustos — como o Boreas: modelagem de dados, regras de negócio, APIs e integração com o frontend.
 
-**Objetivo:** consolidar engenharia de software para futura atuação em Engenharia de IA e sistemas inteligentes.
-
 ---
 
-## Stack
+## Tech Stack
 
 ### Backend
 
@@ -56,22 +54,53 @@ Bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo sistem
   <img src="https://img.shields.io/badge/GitLab-0A0A0A?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
 </p>
 
+### Em estudo para IA
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LLM_APIs-0A0A0A?style=flat-square" alt="LLM APIs em estudo" />
+  <img src="https://img.shields.io/badge/Prompt_Engineering-0A0A0A?style=flat-square" alt="Prompt Engineering em estudo" />
+  <img src="https://img.shields.io/badge/Agentes-0A0A0A?style=flat-square" alt="Agentes em estudo" />
+  <img src="https://img.shields.io/badge/Automa%C3%A7%C3%A3o-0A0A0A?style=flat-square" alt="Automação em estudo" />
+</p>
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,django,nodejs,react,nextjs,ts,git,gitlab&theme=dark&perline=8" alt="Core stack" />
 </p>
 
 ---
 
-## Projetos
+## Projetos Web em Destaque
 
-<div align="center">
+| Projeto     | Descrição                                                                                     | Stack                   | Links                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Agendia** | Plataforma de eventos: catálogo, inscrição em 1-clique, waitlist, QR, check-in e certificados | Node.js, REST           | [código](https://github.com/yankeedemacedo/agendia) · [site](https://yankeedemacedo.tech/projects.html#agendia) |
+| **CtrlX**   | Workstation de estudo: Spaces, Modo Foco e fichas Zettelkasten                                | TypeScript, Web         | [código](https://github.com/yankeedemacedo/ctrlx) · [site](https://yankeedemacedo.tech/projects.html#ctrlx)     |
+| **Fiz**     | Task manager local-first, offline (PWA), sincronia opcional                                   | TypeScript, PWA         | [código](https://github.com/yankeedemacedo/fiz) · [site](https://yankeedemacedo.tech/projects.html#fiz)         |
+| **Boreas**  | Gestão de manutenções de ar-condicionado da UFRN (sistema interno, sem repo público)          | Django, Python, Next.js | [site](https://yankeedemacedo.tech/projects.html#boreas)                                                        |
 
-|                                                                                                                                |                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| **Agendia** — Plataforma de eventos, ingressos e check-in (Node.js) — [ver projeto](https://github.com/yankeedemacedo/agendia) | **CtrlX** — Workstation de produtividade e foco (Zettelkasten) — [ver projeto](https://github.com/yankeedemacedo/ctrlx) |
-| **Fiz** — Task manager offline-first, local-first (PWA) — [ver projeto](https://github.com/yankeedemacedo/fiz)                 | **Boreas** — Sistema interno de gestão da UFRN (Django, Next.js) — `privado / interno`                                  |
+---
 
-</div>
+## Jornada em Inteligência Artificial
+
+> 🌱 **Seção em construção** — aqui vão meus estudos atuais em modelos, LLMs, engenharia de prompts, agentes e automação. Novos repositórios a caminho.
+
+---
+
+## Estudos & Laboratório de Código
+
+Repositórios de aprendizado, testes e exercícios acadêmicos/práticos:
+
+| Repositório                                                                                    | Descrição                     | Stack                 |
+| ---------------------------------------------------------------------------------------------- | ----------------------------- | --------------------- |
+| [apisql](https://github.com/yankeedemacedo/apisql)                                             | CRUD + SQL + bibliotecas Node | JavaScript, Node, SQL |
+| [api_simples](https://github.com/yankeedemacedo/api_simples)                                   | Primeira API, para testes     | JavaScript, Node      |
+| [api_web2](https://github.com/yankeedemacedo/api_web2)                                         | Estudo de WEB 2               | JavaScript, Node      |
+| [shop](https://github.com/yankeedemacedo/shop)                                                 | Estudos em TypeScript         | TypeScript            |
+| [ponteiros_c](https://github.com/yankeedemacedo/ponteiros_c)                                   | Ponteiros em C                | C                     |
+| [site-inspirado-serie-netflix](https://github.com/yankeedemacedo/site-inspirado-serie-netflix) | HTML/CSS puro                 | HTML, CSS             |
+| [escultor](https://github.com/yankeedemacedo/escultor)                                         | Estudos gerais                | Makefile              |
+
+_O repositório [`yankeedemacedo`](https://github.com/yankeedemacedo/yankeedemacedo) hospeda este portfólio/site._
 
 ---
 
@@ -80,4 +109,8 @@ Bolsista Programador de TI no Centro de Tecnologia da UFRN, desenvolvendo sistem
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=yankeedemacedo&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&rank_icon=github" alt="GitHub stats" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yankeedemacedo&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=FFFFFF&icon_color=FFFFFF&text_color=FFFFFF&langs_count=8" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=yankeedemacedo&theme=dark&hide_border=true&background=0A0A0A&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF" alt="GitHub streak" />
 </p>

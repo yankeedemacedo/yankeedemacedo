@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -58,111 +58,96 @@
 
         <section class="section">
           <div class="wrap">
-            <div class="archive" data-reveal>
-              <article class="work-row dossier" id="agendia" data-parallax>
-                <span class="idx">01</span>
-                <div>
-                  <h3>Agendia</h3>
-                  <p class="desc">Plataforma de eventos com identidade tech dark: catálogo público, inscrição em 1-clique, waitlist com promoção automática, ingresso com QR, check-in, certificados e painel do organizador.</p>
-                </div>
-                <span class="tags">Node.js · REST</span>
-                <span class="yr">SaaS</span>
-                <figure class="devices">
-                  <div class="laptop">
-                    <div class="laptop-frame">
-                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-                      <div class="laptop-screen">
-                        <img src="public/agendia-desktop.png" alt="Página inicial do Agendia no desktop: chamada, estatísticas e busca de eventos" loading="lazy" decoding="async" />
+            <div class="section-head carousel-head" data-reveal>
+              <span class="section-num">01</span>
+              <div>
+                <h2>Arquivo</h2>
+                <p>Três andares: web, IA e laboratório. Use as setas para navegar.</p>
+              </div>
+              <span class="carousel-count" aria-hidden="true"><strong data-carousel-current>01</strong> / 03</span>
+            </div>
+            <div class="carousel" data-reveal role="region" aria-roledescription="carrossel" aria-label="Arquivo de trabalhos">
+              <div class="carousel-viewport">
+                <div class="carousel-track" data-carousel-track>
+                  <div class="carousel-slide" data-carousel-slide="web" role="group" aria-roledescription="slide" aria-label="1 de 3: Web">
+                    <div class="proj-grid">
+                      <article class="proj-card" id="agendia">
+                        <div class="proj-thumb"><img src="public/agendia-desktop.png" alt="Página inicial do Agendia" loading="lazy" decoding="async" /><span class="proj-seal" aria-hidden="true">A</span></div>
+                        <div class="proj-body">
+                          <div class="proj-top"><span class="idx">01</span><h3>Agendia</h3></div>
+                          <p class="desc">Plataforma de eventos: catálogo, inscrição em 1-clique, QR e certificados.</p>
+                          <div class="proj-tags"><span>Node.js</span><span>REST</span><span>SaaS</span></div>
+                          <a class="btn-ghost btn-sm" href="https://github.com/yankeedemacedo/agendia" target="_blank" rel="noreferrer">Ver código ↗</a>
+                        </div>
+                      </article>
+                      <article class="proj-card" id="ctrlx">
+                        <div class="proj-thumb"><img src="public/ctrlx-desktop.png" alt="Página inicial do CtrlX" loading="lazy" decoding="async" /><span class="proj-seal" aria-hidden="true">C</span></div>
+                        <div class="proj-body">
+                          <div class="proj-top"><span class="idx">02</span><h3>CtrlX</h3></div>
+                          <p class="desc">Workstation de estudo: Spaces, Modo Foco e fichas Zettelkasten.</p>
+                          <div class="proj-tags"><span>Estudo</span><span>Foco</span><span>Web app</span></div>
+                          <a class="btn-ghost btn-sm" href="https://github.com/yankeedemacedo/ctrlx" target="_blank" rel="noreferrer">Ver código ↗</a>
+                        </div>
+                      </article>
+                      <article class="proj-card" id="fiz">
+                        <div class="proj-thumb"><img src="public/fiz-desktop.png" alt="App Fiz no desktop" loading="lazy" decoding="async" /><span class="proj-seal" aria-hidden="true">F</span></div>
+                        <div class="proj-body">
+                          <div class="proj-top"><span class="idx">03</span><h3>Fiz</h3></div>
+                          <p class="desc">Task manager local-first: offline, PWA e sincronia opcional.</p>
+                          <div class="proj-tags"><span>PWA</span><span>Offline</span><span>Local-first</span></div>
+                          <a class="btn-ghost btn-sm" href="https://github.com/yankeedemacedo/fiz" target="_blank" rel="noreferrer">Ver código ↗</a>
+                        </div>
+                      </article>
+                      <article class="proj-card" id="boreas">
+                        <div class="proj-thumb plate"><img src="public/boreas-ufrn.png" alt="Logotipos do Boreas e da UFRN" loading="lazy" decoding="async" /><span class="proj-seal" aria-hidden="true">B</span></div>
+                        <div class="proj-body">
+                          <div class="proj-top"><span class="idx">04</span><h3>Boreas</h3></div>
+                          <p class="desc">Gestão de manutenções de ar-condicionado da UFRN.</p>
+                          <div class="proj-tags"><span>Django</span><span>Python</span><span>UFRN</span></div>
+                          <span class="btn-ghost btn-sm is-disabled" aria-disabled="true">Privado / Interno</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="carousel-slide" id="ia" data-carousel-slide="ia" role="group" aria-roledescription="slide" aria-label="2 de 3: Inteligência Artificial">
+                    <div class="soon-wrap">
+                      <div class="soon-emblem" aria-hidden="true"><span>EM<br />BREVE</span></div>
+                      <h2>Jornada em Inteligência Artificial</h2>
+                      <p>Seção em construção — aqui vão meus estudos em modelos, LLMs, engenharia de prompts, agentes e automação. Novos repositórios a caminho.</p>
+                      <div class="ai-strip" aria-label="Temas de estudo em IA">
+                        <span>LLMs</span><span>prompts</span><span>agentes</span><span>automação</span><span>modelos</span>
                       </div>
                     </div>
-                    <div class="laptop-base" aria-hidden="true"></div>
                   </div>
-                  <div class="phone">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <div class="phone-screen">
-                      <img src="public/agendia-mobile.png" alt="Página inicial do Agendia no celular" loading="lazy" decoding="async" />
+                  <div class="carousel-slide" id="laboratorio" data-carousel-slide="lab" role="group" aria-roledescription="slide" aria-label="3 de 3: Laboratório">
+                    <div class="repo-grid">
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/apisql" target="_blank" rel="noreferrer"><span class="repo-name">apisql</span><span class="repo-desc">CRUD + SQL + bibliotecas Node</span><span class="repo-foot"><i class="dot js" aria-hidden="true"></i>JavaScript<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/api_simples" target="_blank" rel="noreferrer"><span class="repo-name">api_simples</span><span class="repo-desc">Primeira API, para testes</span><span class="repo-foot"><i class="dot js" aria-hidden="true"></i>JavaScript<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/api_web2" target="_blank" rel="noreferrer"><span class="repo-name">api_web2</span><span class="repo-desc">Estudo de WEB 2</span><span class="repo-foot"><i class="dot js" aria-hidden="true"></i>JavaScript<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/shop" target="_blank" rel="noreferrer"><span class="repo-name">shop</span><span class="repo-desc">Estudos em TypeScript</span><span class="repo-foot"><i class="dot ts" aria-hidden="true"></i>TypeScript<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/ponteiros_c" target="_blank" rel="noreferrer"><span class="repo-name">ponteiros_c</span><span class="repo-desc">Ponteiros em C</span><span class="repo-foot"><i class="dot c" aria-hidden="true"></i>C<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/site-inspirado-serie-netflix" target="_blank" rel="noreferrer"><span class="repo-name">site-netflix</span><span class="repo-desc">HTML/CSS puro</span><span class="repo-foot"><i class="dot html" aria-hidden="true"></i>HTML<span class="repo-go" aria-hidden="true">↗</span></span></a>
+                      <a class="repo-card" href="https://github.com/yankeedemacedo/escultor" target="_blank" rel="noreferrer"><span class="repo-name">escultor</span><span class="repo-desc">Estudos gerais</span><span class="repo-foot"><i class="dot mk" aria-hidden="true"></i>Makefile<span class="repo-go" aria-hidden="true">↗</span></span></a>
                     </div>
                   </div>
-                  <figcaption>FIG. 01 — Agendia · desktop + mobile</figcaption>
-                </figure>
-              </article>
-              <article class="work-row dossier" id="ctrlx" data-parallax>
-                <span class="idx">02</span>
-                <div>
-                  <h3>CtrlX</h3>
-                  <p class="desc">Workstation de produtividade para estudantes e pesquisadores: guarda links em Spaces, separa ferramentas de uso diário (Dock) da fila de rascunhos e transforma cada leitura em ficha de estudo (Zettelkasten + Active Recall) pelo Modo Foco — um link por vez, sem distrações.</p>
                 </div>
-                <span class="tags">Estudo · Foco</span>
-                <span class="yr">Web app</span>
-                <figure class="devices">
-                  <div class="laptop">
-                    <div class="laptop-frame">
-                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-                      <div class="laptop-screen">
-                        <img src="public/ctrlx-desktop.png" alt="Página inicial do CtrlX no desktop: chamada, fichas de estudo e recursos" loading="lazy" decoding="async" />
-                      </div>
-                    </div>
-                    <div class="laptop-base" aria-hidden="true"></div>
-                  </div>
-                  <div class="phone">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <div class="phone-screen">
-                      <img src="public/ctrlx-mobile.png" alt="Página inicial do CtrlX no celular" loading="lazy" decoding="async" />
-                    </div>
-                  </div>
-                  <figcaption>FIG. 02 — CtrlX · desktop + mobile</figcaption>
-                </figure>
-              </article>
-              <article class="work-row dossier" id="fiz" data-parallax>
-                <span class="idx">03</span>
-                <div>
-                  <h3>Fiz</h3>
-                  <p class="desc">Task manager moderno, rápido e local-first: funciona offline (PWA) e persiste no navegador. Acompanha uma API Express opcional (api/) para sincronizar dados — sem ela, o app usa localStorage.</p>
-                </div>
-                <span class="tags">PWA · Offline</span>
-                <span class="yr">Local-first</span>
-                <figure class="devices">
-                  <div class="laptop">
-                    <div class="laptop-frame">
-                      <div class="laptop-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-                      <div class="laptop-screen">
-                        <img src="public/fiz-desktop.png" alt="App Fiz no desktop: busca, visualizações, categorias e lista de tarefas" loading="lazy" decoding="async" />
-                      </div>
-                    </div>
-                    <div class="laptop-base" aria-hidden="true"></div>
-                  </div>
-                  <div class="phone">
-                    <div class="phone-notch" aria-hidden="true"></div>
-                    <div class="phone-screen">
-                      <img src="public/fiz-mobile.png" alt="App Fiz no celular: nova tarefa e estado vazio" loading="lazy" decoding="async" />
-                    </div>
-                  </div>
-                  <figcaption>FIG. 03 — Fiz · desktop + mobile</figcaption>
-                </figure>
-              </article>
-              <article class="work-row dossier" id="boreas" data-parallax>
-                <span class="idx">04</span>
-                <div>
-                  <h3>Boreas</h3>
-                  <p class="desc">Sistema institucional da UFRN para gestão e organização de manutenções de ar-condicionado — equipamentos, ordens de serviço e histórico. Modelagem de dados, regras de negócio, APIs e integração com o frontend; manutenção contínua.</p>
-                </div>
-                <span class="tags">Django · Python · Next.js</span>
-                <span class="yr">UFRN</span>
-                <figure class="devices devices-single">
-                  <div class="logoplate">
-                    <img src="public/boreas-ufrn.png" alt="Logotipos do projeto Boreas e da UFRN" loading="lazy" decoding="async" />
-                  </div>
-                  <figcaption>FIG. 04 — Boreas + UFRN · material institucional</figcaption>
-                </figure>
-              </article>
+              </div>
+              <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Slide anterior">←</button>
+              <button class="carousel-btn next" type="button" data-carousel-next aria-label="Próximo slide">→</button>
+              <div class="carousel-dots" role="tablist" aria-label="Slides do arquivo">
+                <button type="button" data-carousel-dot="0" aria-label="Web" aria-current="true"></button>
+                <button type="button" data-carousel-dot="1" aria-label="Inteligência Artificial" aria-current="false"></button>
+                <button type="button" data-carousel-dot="2" aria-label="Laboratório" aria-current="false"></button>
+              </div>
             </div>
             <div class="spec-list" data-reveal>
               <div><h3>Materiais</h3><p>Python · Django · Node.js · React · Next.js · TypeScript · ORM · REST</p></div>
               <div><h3>Método</h3><p>Fluxo real → modelo de dados → regras no backend → contrato de API → evolução registrada.</p></div>
-              <div><h3>Registro</h3><p>UFRN · Natal-RN · <a href="contact.html">contato</a></p></div>
+              <div><h3>Registro</h3><p>UFRN · Natal-RN · <a href="contact.html">contato</a> · <a href="https://github.com/yankeedemacedo" target="_blank" rel="noreferrer">GitHub</a></p></div>
             </div>
           </div>
         </section>
+
       </main>
 
       <footer class="footer">

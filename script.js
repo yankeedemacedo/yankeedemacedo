@@ -106,4 +106,91 @@ document.addEventListener("DOMContentLoaded", () => {
     measure();
     requestRender();
   }
+
+  // Carrossel do arquivo (projects.html): web → IA → laboratório
+  const track = document.querySelector("[data-carousel-track]");
+  if (track) {
+    const slides = Array.from(track.children);
+    const prev = document.querySelector("[data-carousel-prev]");
+    const next = document.querySelector("[data-carousel-next]");
+    const dots = Array.from(document.querySelectorAll("[data-carousel-dot]"));
+    const counter = document.querySelector("[data-carousel-current]");
+    const carousel = track.closest(".carousel");
+    let index = 0;
+
+    const go = (i) => {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      slides.forEach((slide) => { slide.scrollTop = 0; });
+      dots.forEach((dot, d) => dot.setAttribute("aria-current", String(d === index)));
+      if (counter) counter.textContent = String(index + 1).padStart(2, "0");
+    };
+
+    // Âncoras profundas: #ia / #laboratorio abrem o slide certo;
+    // dossiers (#agendia…) vivem no slide 0
+    const slideForHash = (hash) => {
+      if (hash === "#ia") return 1;
+      if (hash === "#laboratorio") return 2;
+      return 0;
+    };
+    const applyHash = () => {
+      const i = slideForHash(window.location.hash);
+      go(i);
+      if (i > 0 && carousel) carousel.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    };
+
+    if (prev) prev.addEventListener("click", () => go(index - 1));
+    if (next) next.addEventListener("click", () => go(index + 1));
+    dots.forEach((dot, d) => dot.addEventListener("click", () => go(d)));
+    document.addEventListener("keydown", (event) => {
+      if (!carousel || !carousel.contains(document.activeElement)) return;
+      if (event.key === "ArrowLeft") go(index - 1);
+      if (event.key === "ArrowRight") go(index + 1);
+    });
+    window.addEventListener("hashchange", applyHash);
+    applyHash();
+  }
+
+  // Cycler de retratos: clique avança; sozinho troca a cada 3s.
+  // Pausa no hover/foco; com reduced-motion, só no clique.
+  const reduceMotionCycler = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll("[data-cycler]").forEach((cycler) => {
+    const frames = Array.from(cycler.querySelectorAll(".frame"));
+    const label = cycler.querySelector("[data-cycler-label]");
+    const count = cycler.querySelector("[data-cycler-count]");
+    if (frames.length < 2) return;
+    let current = 0;
+    let timer = null;
+
+    const show = (i) => {
+      current = (i + frames.length) % frames.length;
+      frames.forEach((frame, f) => frame.classList.toggle("is-on", f === current));
+      if (label) label.textContent = frames[current].getAttribute("data-label") || `Foto ${current + 1}`;
+      if (count) count.textContent = String(current + 1).padStart(2, "0");
+    };
+    const stop = () => {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    };
+    const start = () => {
+      if (reduceMotionCycler || timer) return;
+      const interval = Number(cycler.getAttribute("data-interval")) || 3000;
+      timer = window.setInterval(() => show(current + 1), interval);
+    };
+
+    cycler.addEventListener("click", () => show(current + 1));
+    cycler.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        show(current + 1);
+      }
+    });
+    cycler.addEventListener("pointerenter", stop);
+    cycler.addEventListener("pointerleave", start);
+    cycler.addEventListener("focusin", stop);
+    cycler.addEventListener("focusout", start);
+    start();
+  });
 });

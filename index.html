@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -54,29 +54,34 @@
         <section class="hero">
           <div class="wrap">
             <div class="hero-meta">
-              <span>Arquivo de trabalhos — Vol. 01</span>
-              <span>Natal, RN — 5.79°S 35.20°W</span>
+              <span>Portfólio criativo</span>
+              <span>Natal, RN — 2026</span>
             </div>
             <div class="hero-layout">
               <h1 class="hero-title" aria-label="Olá, eu sou Yankee de Macedo">
                 <span class="hero-hello" aria-hidden="true">Olá, eu sou</span>
                 <span class="row"><span>Yankee</span></span>
-                <span class="row"><span class="outline">de Macedo</span></span>
+                <span class="row"><span class="red">de Macedo</span></span>
               </h1>
-              <figure class="portrait" data-reveal>
+              <figure class="portrait cycler" data-reveal data-cycler data-interval="3000" tabindex="0" aria-label="Fotos de perfil: clique ou aguarde para trocar o estilo">
+                <span class="disc" aria-hidden="true"></span>
                 <div class="portrait-media">
-                  <img src="public/foto_perfil.png" alt="Retrato de Yankee de Macedo" loading="eager" decoding="async" />
-                  <span class="geo geo-frame" aria-hidden="true"></span>
-                  <span class="geo geo-square" aria-hidden="true"></span>
-                  <span class="geo geo-line" aria-hidden="true"></span>
-                  <span class="geo geo-plus" aria-hidden="true">+</span>
+                  <img class="frame is-on" src="public/foto_perfil.png" alt="Retrato de Yankee de Macedo — foto original" loading="eager" decoding="async" data-label="Original" />
+                  <img class="frame" src="public/foto_perfil_3d.png" alt="Retrato de Yankee de Macedo — estilo 3D cartoon" loading="lazy" decoding="async" data-label="3D" />
+                  <img class="frame" src="public/foto_perfil_bloco.png" alt="Retrato de Yankee de Macedo — estilo blocos voxel" loading="lazy" decoding="async" data-label="Blocos" />
+                  <img class="frame" src="public/foto_perfil_papel.png" alt="Retrato de Yankee de Macedo — estilo papel recortado" loading="lazy" decoding="async" data-label="Papel" />
                 </div>
-                <figcaption>YM — Natal, RN</figcaption>
+                <figcaption><span data-cycler-label>Original</span><span class="cycler-count"><span data-cycler-count>01</span> / 04</span></figcaption>
               </figure>
             </div>
             <div class="hero-sub">
               <p>Desenvolvedor Fullstack — Backend &amp; Arquitetura de Software</p>
               <a class="scroll-hint" href="#manifesto">Role para explorar <span class="line" aria-hidden="true"></span></a>
+            </div>
+            <div class="hero-contact" data-reveal>
+              <a href="mailto:yankeemauricio2@gmail.com">yankeemauricio2@gmail.com</a>
+              <a href="https://www.linkedin.com/in/yankeedemacedo/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/yankeedemacedo" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
         </section>
@@ -138,6 +143,15 @@
                 </div>
                 <span class="tags">Django · Python</span>
                 <span class="yr">UFRN</span>
+              </a>
+              <a class="work-row" href="projects.html#ia" data-parallax>
+                <span class="idx">05</span>
+                <div>
+                  <h3><span class="u">Jornada IA</span></h3>
+                  <p class="desc">Estudos em LLMs, prompts, agentes e automação — em construção.</p>
+                </div>
+                <span class="tags">Em estudo</span>
+                <span class="yr">Novo</span>
               </a>
             </div>
           </div>
