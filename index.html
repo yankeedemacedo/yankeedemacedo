@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yankee de Macedo — Backend &amp; Arquitetura de Software</title>
-    <meta
-      name="description"
-      content="Arquivo de trabalhos de Yankee de Macedo: backend, arquitetura de software e integração de sistemas. Natal-RN, UFRN."
-    />
-    <meta name="theme-color" content="#0A0A0A" />
-    <meta property="og:title" content="Yankee de Macedo — Backend & Arquitetura" />
-    <meta property="og:description" content="Software que sustenta operação: dados, APIs e integração." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Yankee de Macedo — Estudante de Computação</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="description"
+      content="Portfólio de estudos e projetos de Yankee de Macedo, estudante de Engenharia da Computação na UFRN. Sistemas web, backend e arquitetura. Natal-RN."
+    />
+    <meta name="theme-color" content="#E6E6E6" />
+    <meta property="og:title" content="Yankee de Macedo — Estudante de Computação" />
+    <meta property="og:description" content="Projetos de estudo em sistemas web, backend e arquitetura de software." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <noscript><style>[data-reveal] { opacity: 1 !important; transform: none !important; }</style></noscript>
   </head>
@@ -30,12 +30,11 @@
           <a href="index.html" class="brand" aria-label="Yankee de Macedo — início">
             <span class="brand-mark" aria-hidden="true">YM</span>
             <span class="brand-name">Yankee de Macedo</span>
-            <span class="brand-role">Arquivo 2026</span>
           </a>
           <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html" class="is-active">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="projects.html">Arquivo</a>
+            <a href="projects.html">Projetos</a>
             <a href="contact.html">Contato</a>
           </nav>
           <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
@@ -44,40 +43,40 @@
           <nav class="mobile-nav" id="menu-mobile" aria-label="Menu mobile">
             <a href="index.html">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="projects.html">Arquivo</a>
+            <a href="projects.html">Projetos</a>
             <a href="contact.html">Contato</a>
           </nav>
         </div>
       </header>
 
       <main id="conteudo">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="wrap">
             <div class="hero-meta">
-              <span>Portfólio criativo</span>
               <span>Natal, RN — 2026</span>
             </div>
-            <div class="hero-layout">
-              <h1 class="hero-title" aria-label="Olá, eu sou Yankee de Macedo">
-                <span class="hero-hello" aria-hidden="true">Olá, eu sou</span>
-                <span class="row"><span>Yankee</span></span>
-                <span class="row"><span class="red">de Macedo</span></span>
-              </h1>
-              <figure class="portrait cycler" data-reveal data-cycler data-interval="3000" tabindex="0" aria-label="Fotos de perfil: clique ou aguarde para trocar o estilo">
-                <span class="disc" aria-hidden="true"></span>
-                <div class="portrait-media">
-                  <img class="frame is-on" src="public/foto_perfil.png" alt="Retrato de Yankee de Macedo — foto original" loading="eager" decoding="async" data-label="Original" />
-                  <img class="frame" src="public/foto_perfil_3d.png" alt="Retrato de Yankee de Macedo — estilo 3D cartoon" loading="lazy" decoding="async" data-label="3D" />
-                  <img class="frame" src="public/foto_perfil_bloco.png" alt="Retrato de Yankee de Macedo — estilo blocos voxel" loading="lazy" decoding="async" data-label="Blocos" />
-                  <img class="frame" src="public/foto_perfil_papel.png" alt="Retrato de Yankee de Macedo — estilo papel recortado" loading="lazy" decoding="async" data-label="Papel" />
-                </div>
-                <figcaption><span data-cycler-label>Original</span><span class="cycler-count"><span data-cycler-count>01</span> / 04</span></figcaption>
-              </figure>
+
+            <!-- nome gigante (camada de trás) -->
+            <h1 class="hero-title">
+              <span class="hero-line"><span>Yankee</span></span>
+              <span class="hero-line"><span>de Macedo</span></span>
+            </h1>
+
+            <!-- fotos recortadas: absolute, por cima do texto (efeito 3D) -->
+            <div class="hero-figure" aria-hidden="true">
+              <div class="hero-photo-stack">
+                <img src="public/foto_perfil_semfundo.webp" alt="" class="is-on" loading="eager" fetchpriority="high" decoding="async" width="1249" height="1249" />
+                <img src="public/foto_perfil_3d-semfundo.webp" alt="" loading="lazy" decoding="async" width="1600" height="1600" />
+                <img src="public/foto_perfil_bloco_semfundo.webp" alt="" loading="lazy" decoding="async" width="1600" height="1600" />
+                <img src="public/foto_perfil_papel_semfundo.webp" alt="" loading="lazy" decoding="async" width="1024" height="1024" />
+              </div>
             </div>
-            <div class="hero-sub">
-              <p>Desenvolvedor Fullstack — Backend &amp; Arquitetura de Software</p>
-              <a class="scroll-hint" href="#manifesto">Role para explorar <span class="line" aria-hidden="true"></span></a>
+
+            <div class="hero-bottom">
+              <p class="hero-role">Estudante de Computação · Sistemas web e arquitetura de software</p>
+              <p class="hero-note">Também estudo inteligência artificial como parte da computação.</p>
             </div>
+
             <div class="hero-contact" data-reveal>
               <a href="mailto:yankeemauricio2@gmail.com">yankeemauricio2@gmail.com</a>
               <a href="https://www.linkedin.com/in/yankeedemacedo/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -88,17 +87,17 @@
 
         <section class="section" id="manifesto">
           <div class="wrap">
-            <p class="section-label">01 / Manifesto</p>
+            <p class="section-label">01 / Sobre o que faço</p>
             <div class="manifesto" data-reveal>
               <p>
-                Construo <strong>software que sustenta operação</strong>:
-                dados modelados com rigor, regras de negócio no backend
-                <span class="faint">e APIs que o frontend consome sem fricção.</span>
+                Gosto de <strong>organizar software para que ele funcione bem</strong>:
+                dados modelados com cuidado, regras de negócio no backend
+                <span class="faint">e APIs que o frontend consome sem dificuldade.</span>
               </p>
             </div>
             <dl class="facts" data-reveal>
               <div><dt>Base</dt><dd>Centro de Tecnologia — UFRN, Natal-RN</dd></div>
-              <div><dt>Sistema em produção</dt><dd>Boreas — manutenção de climatização</dd></div>
+              <div><dt>Trabalho atual</dt><dd>Boreas — manutenção de climatização</dd></div>
               <div><dt>Materiais</dt><dd>Python · Django · Node.js · Next.js</dd></div>
             </dl>
           </div>
@@ -106,7 +105,7 @@
 
         <section class="section" id="arquivo">
           <div class="wrap">
-            <p class="section-label">02 / Arquivo selecionado</p>
+            <p class="section-label">02 / Projetos</p>
             <div class="archive" data-reveal>
               <a class="work-row" href="projects.html#agendia" data-parallax>
                 <span class="idx">01</span>
@@ -147,11 +146,11 @@
               <a class="work-row" href="projects.html#ia" data-parallax>
                 <span class="idx">05</span>
                 <div>
-                  <h3><span class="u">Jornada IA</span></h3>
-                  <p class="desc">Estudos em LLMs, prompts, agentes e automação — em construção.</p>
+                  <h3><span class="u">Estudos de IA</span></h3>
+                  <p class="desc">Começando a estudar LLMs, prompts, agentes e automação.</p>
                 </div>
                 <span class="tags">Em estudo</span>
-                <span class="yr">Novo</span>
+                <span class="yr">Iniciando</span>
               </a>
             </div>
           </div>

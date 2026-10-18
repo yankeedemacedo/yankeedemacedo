@@ -151,6 +151,39 @@ document.addEventListener("DOMContentLoaded", () => {
     applyHash();
   }
 
+  // Hero 3D: intercalação suave das 4 fotos recortadas (sem filtros).
+  // O recorte fica absoluto sobre as letras; aqui só alternamos o visível.
+  const heroStack = document.querySelector(".hero-photo-stack");
+  if (heroStack) {
+    const heroPhotos = Array.from(heroStack.querySelectorAll("img"));
+    const reduceHero = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let heroIdx = 0;
+    let heroTimer = null;
+
+    const showHero = (i) => {
+      heroIdx = (i + heroPhotos.length) % heroPhotos.length;
+      heroPhotos.forEach((photo, n) => photo.classList.toggle("is-on", n === heroIdx));
+    };
+    const pauseHero = () => {
+      if (heroTimer) {
+        window.clearInterval(heroTimer);
+        heroTimer = null;
+      }
+    };
+    const playHero = () => {
+      if (reduceHero || heroTimer || heroPhotos.length < 2) return;
+      heroTimer = window.setInterval(() => showHero(heroIdx + 1), 3500);
+    };
+
+    showHero(0);
+    playHero();
+
+    // economiza bateria: não anima com a aba em segundo plano
+    document.addEventListener("visibilitychange", () => {
+      document.hidden ? pauseHero() : playHero();
+    });
+  }
+
   // Cycler de retratos: clique avança; sozinho troca a cada 3s.
   // Pausa no hover/foco; com reduced-motion, só no clique.
   const reduceMotionCycler = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

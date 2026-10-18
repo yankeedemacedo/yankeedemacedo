@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre — Yankee de Macedo</title>
-    <meta name="description" content="Percurso de Yankee de Macedo: operação, pesquisa, dados e backend na UFRN." />
-    <meta name="theme-color" content="#0A0A0A" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Percurso de Yankee de Macedo, estudante de Engenharia da Computação na UFRN." />
+    <meta name="theme-color" content="#E6E6E6" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <noscript><style>[data-reveal] { opacity: 1 !important; transform: none !important; }</style></noscript>
   </head>
@@ -24,12 +24,11 @@
           <a href="index.html" class="brand" aria-label="Yankee de Macedo — início">
             <span class="brand-mark" aria-hidden="true">YM</span>
             <span class="brand-name">Yankee de Macedo</span>
-            <span class="brand-role">Arquivo 2026</span>
           </a>
           <nav class="main-nav" aria-label="Menu principal">
             <a href="index.html">Início</a>
             <a href="about.html" class="is-active">Sobre</a>
-            <a href="projects.html">Arquivo</a>
+            <a href="projects.html">Projetos</a>
             <a href="contact.html">Contato</a>
           </nav>
           <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
@@ -38,36 +37,30 @@
           <nav class="mobile-nav" id="menu-mobile" aria-label="Menu mobile">
             <a href="index.html">Início</a>
             <a href="about.html">Sobre</a>
-            <a href="projects.html">Arquivo</a>
+            <a href="projects.html">Projetos</a>
             <a href="contact.html">Contato</a>
           </nav>
         </div>
       </header>
 
       <main id="conteudo">
-        <section class="page-hero">
-          <div class="wrap">
-            <p class="section-label">Sobre / Percurso</p>
-            <div class="page-hero-grid">
-              <figure class="portrait cycler" data-reveal data-cycler data-interval="3000" tabindex="0" aria-label="Fotos de perfil: clique ou aguarde para trocar o estilo">
-                <span class="disc" aria-hidden="true"></span>
-                <div class="portrait-media">
-                  <img class="frame is-on" src="public/foto_perfil.png" alt="Retrato de Yankee de Macedo — foto original" loading="eager" decoding="async" data-label="Original" />
-                  <img class="frame" src="public/foto_perfil_3d.png" alt="Retrato de Yankee de Macedo — estilo 3D cartoon" loading="lazy" decoding="async" data-label="3D" />
-                  <img class="frame" src="public/foto_perfil_bloco.png" alt="Retrato de Yankee de Macedo — estilo blocos voxel" loading="lazy" decoding="async" data-label="Blocos" />
-                  <img class="frame" src="public/foto_perfil_papel.png" alt="Retrato de Yankee de Macedo — estilo papel recortado" loading="lazy" decoding="async" data-label="Papel" />
-                </div>
-                <figcaption><span data-cycler-label>Original</span><span class="cycler-count"><span data-cycler-count>01</span> / 04</span></figcaption>
-              </figure>
-              <div>
-                <h1 data-reveal>Técnica a serviço da operação.</h1>
-                <p class="lead" data-reveal>
-                  Estudante de Ciência e Tecnologia e Engenharia de Computação na UFRN
-                  (conclusão 2027.2). Bolsista Programador de TI no Centro de Tecnologia,
-                  com atuação fullstack e ênfase em backend no sistema Boreas.
+        <section class="about-hero">
+          <div class="about-hero-inner">
+            <div class="wrap about-hero-copy">
+              <div class="glass-panel" data-reveal>
+                <p class="section-label">Sobre / Percurso</p>
+                <h1>Técnica a serviço da operação.</h1>
+                <p class="lead">
+                  Estou estudando Ciência e Tecnologia e Engenharia de Computação na UFRN,
+                  com previsão de conclusão em 2027.2. Sou bolsista Programador de TI no
+                  Centro de Tecnologia, trabalhando com sistemas web e mais no backend do
+                  sistema Boreas.
                 </p>
               </div>
             </div>
+          </div>
+          <div class="about-hero-media">
+            <img src="public/foto_perfil.png" alt="Yankee de Macedo" loading="eager" fetchpriority="high" decoding="async" />
           </div>
         </section>
 
@@ -81,9 +74,9 @@
                   <h3>Bolsista Programador de TI</h3>
                   <p>Sistema Boreas · Django · Python · Next.js</p>
                   <ul>
-                    <li>Modelagem e estruturação de dados de equipamentos e manutenções.</li>
-                    <li>Regras de negócio, APIs e integração com o frontend.</li>
-                    <li>Manutenção e evolução de sistema institucional em uso.</li>
+                    <li>Ajudo a modelar os dados de equipamentos e manutenções.</li>
+                    <li>Trabalho em regras de negócio, APIs e integração com o frontend.</li>
+                    <li>Participo da manutenção de um sistema que já está em uso.</li>
                   </ul>
                 </div>
               </article>
@@ -109,8 +102,8 @@
               <article>
                 <span class="when">Formação</span>
                 <div>
-                  <h3>UFRN — C&amp;T, ênfase em Computação</h3>
-                  <p>Auxiliar em Gestão Empresarial (CCM).</p>
+                  <h3>UFRN — C&amp;T com ênfase em Computação</h3>
+                  <p>Cursando, previsão de conclusão em 2027.2. Auxiliar em Gestão Empresarial (CCM).</p>
                 </div>
               </article>
             </div>
